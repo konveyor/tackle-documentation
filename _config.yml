@@ -40,12 +40,6 @@ asciidoctor:
   - the-lc=
   - The=
   - project-version=1.0-beta
-  # - virt=KubeVirt
-  # - ocp=OKD
-  # - ocp-version=4.7
-  # - ocp-short=OKD
-  # - operator=forklift-operator
-  # - namespace=openshift-migration
   safe: unsafe
 
 exclude:

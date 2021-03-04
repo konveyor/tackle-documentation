@@ -15,6 +15,6 @@
 
 :abstract: {The} {project-first} enables you to refactor your applications for Kubernetes.
 :title: Installing and using {the-lc} {project-full}
-:subtitle: 
+:subtitle:
 
-// Attributes for Forklift (upstream) are in _config.yml
+// Attributes for Tackle (ups

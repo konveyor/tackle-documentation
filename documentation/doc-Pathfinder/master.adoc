@@ -1,0 +1,23 @@
+// common document attributes
+include::modules/common-attributes.adoc[]
+ifeval::["{build}" == "downstream"]
+= {title}
+endif::[]
+ifeval::["{build}" == "upstream"]
+= {title} ({project-version})
+endif::[]
+:toc:
+:toc-title:
+:toclevels: 3
+:compat-mode:
+:context: pathfinder
+:pathfinder:
+
+include::modules/making-open-source-more-inclusive.adoc[]
+
+[id="about-pathfinder_{context}"]
+== About {the-lc} {project-full}
+
+TBD
+
+:pathfinder!:

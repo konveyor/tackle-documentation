@@ -3,10 +3,8 @@
 
 ## What is Tackle?
 
-Tackle is a tool in the link:https://konveyor.io/[Konveyor community] for
-
-The downstream project is ....
+Tackle is a tool in the link:https://konveyor.io/[Konveyor community] for refactoring your applications for Kubernetes.
 
 ## Documentation
 
-* TBD
+* link:documentation/doc-Pathfinder/master/index.html[Installing and using MTA Pathfinder] (beta in progress)
