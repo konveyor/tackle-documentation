@@ -1,0 +1,21 @@
+---
+---
+
+@import 'jekyll-theme-cayman';
+
+h1#logo img {
+    max-width: 100%;
+}
+
+h1#logo {
+    margin-bottom: 0;
+}
+
+.main-logo{
+  position:relative;z-index:9;
+
+max-width: 70%;
+display:block;
+margin: 0 auto;
+margin-bottom: -5em;
+}

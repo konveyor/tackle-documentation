@@ -1,0 +1,20 @@
+// Attributes for MTA Pathfinder (downstream)
+:icons: font
+:toc: macro
+:experimental:
+:imagesdir: modules/images
+:kebab: Options menu image:kebab.png[title="Options menu"]
+:build: downstream
+:project-short: MTA Pathfinder
+:project-full: Migration Toolkit for Applications Pathfinder
+:the: The
+:the-lc: the
+:project-first: Migration Toolkit for Applications (MTA) Pathfinder
+:project-version: 1.0-beta
+:namespace:
+
+:abstract: {The} {project-first} enables you to refactor your applications for Kubernetes.
+:title: Installing and using {the-lc} {project-full}
+:subtitle:
+
+// Attributes for Tackle (ups
