@@ -4,8 +4,6 @@
 
 Tackle is an upstream project for refactoring applications for Kubernetes.
 
-The downstream project is MTA Pathfinder.
-
 ## Contributing to Tackle documentation
 
 Read the [Guidelines for Red Hat Documentation](https://redhat-documentation.github.io/) before opening a pull request.
@@ -18,7 +16,7 @@ This document uses the following variables to ensure that upstream and downstrea
 | -------- | -------------- | ---------------- |
 | project-full | Tackle | MTA Pathfinder |
 | project-short | Tackle | MTA Pathfinder |
-| project-version | 1.0-beta | 1.0-beta |
+| project-version | 1.0 | 1.0 |
 
 Variables cannot be used in CLI commands or code blocks unless you include the "attributes" keyword:
 
