@@ -3,9 +3,11 @@ show_downloads: false
 title: "Tackle Documentation"
 permalink: pretty
 repository: konveyor/tackle-documentation
-baseurl: /
+# If domain is created with CNAME file, baseurl="/"
+# GH page server URLs: 185.199.111.153, 185.199.110.153, 185.199.109.153, 185.199.108.153
+baseurl: /tackle-documentation/
 
-logo: "/assets/img/konveyor-logo-tackle.svg"
+logo: "assets/img/konveyor-logo-tackle.svg"
 type: website
 future: false
 
