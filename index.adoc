@@ -7,4 +7,4 @@ Tackle is a tool in the link:https://konveyor.io/[Konveyor community] for refact
 
 ## Documentation
 
-* link:documentation/doc-user-guide/master/index.html[Installing and using MTA Pathfinder] (beta in progress)
+* link:documentation/doc-user-guide/master/index.html[Installing and using Tackle] (beta in progress)
