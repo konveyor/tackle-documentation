@@ -13,11 +13,11 @@ endif::[]
 :context: pathfinder
 :pathfinder:
 
+ifeval::["{build}" == "downstream"]
 include::modules/making-open-source-more-inclusive.adoc[]
+endif::[]
 
 [id="about-pathfinder_{context}"]
 == About {the-lc} {project-full}
-
-TBD
 
 :pathfinder!:
