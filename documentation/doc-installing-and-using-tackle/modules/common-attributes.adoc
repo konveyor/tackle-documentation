@@ -10,11 +10,11 @@
 :the: The
 :the-lc: the
 :project-first: Migration Toolkit for Applications (MTA) Pathfinder
-:project-version: 1.0-beta
+:project-version: 1.0
 :namespace:
 
 :abstract: {The} {project-first} enables you to refactor your applications for Kubernetes.
 :title: Installing and using {the-lc} {project-full}
 :subtitle:
 
-// Attributes for Tackle (ups
+// Attributes for Tackle (upstream) are in _config.yml

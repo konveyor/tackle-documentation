@@ -41,7 +41,7 @@ asciidoctor:
   - project-first=Tackle
   - the-lc=
   - The=
-  - project-version=1.0-beta
+  - project-version=1.0
   safe: unsafe
 
 exclude:
