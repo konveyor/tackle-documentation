@@ -2,7 +2,7 @@
 
 # Tackle documentation
 
-Tackle is an upstream project for refactoring applications for Kubernetes.
+Tackle is an upstream project for refactoring applications for Kubernetes. Tackle is part of the [Konveyor project](https://www.konveyor.io/).
 
 ## Contributing to Tackle documentation
 
@@ -39,7 +39,7 @@ You must have Podman installed.
 
 1. Clone the repository:
   ```console
-  $ git clone -b source https://github.com/konveyor/forklift-documentation.git && cd forklift-documentation
+  $ git clone -b source https://github.com/konveyor/tackle-documentation.git && cd tackle-documentation
   ```
 2. Create `.jekyll-cache` and `_site` directories:
   ```console
