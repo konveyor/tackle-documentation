@@ -17,6 +17,8 @@ ifeval::["{build}" == "downstream"]
 include::modules/making-open-source-more-inclusive.adoc[]
 endif::[]
 
+{project-first}
+
 [id="about-pathfinder_{context}"]
 == About {the-lc} {project-full}
 
