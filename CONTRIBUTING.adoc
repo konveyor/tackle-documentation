@@ -1,0 +1,85 @@
+= Contributors Guide
+
+Improvements to Tackle documentation are welcome.
+
+Read the [Guidelines for Red Hat Documentation](https://redhat-documentation.github.io/) before opening a pull request.
+
+Use the following steps to create a pull request for the Tackle documentation repository.
+
+. Fork the link:https://github.com/konveyor/tackle-documentation[tackle-documentation] GitHub repository.
++
+Click the *Fork* button in the top right corner of the page.
+. Clone the forked repository locally.
++
+[source,options="nowrap"]
+----
+$ git clone git@github.com:YOUR_USERNAME/tackle-documentation.git
+----
+. Add the upstream repository.
++
+[source,options="nowrap"]
+----
+git remote add -f upstream git@github.com:tackle-documentation.git
+----
+. Get the latest changes.
++
+[source,options="nowrap"]
+----
+$ git fetch upstream
+----
+. Check out a topic branch.
++
+[source,options="nowrap"]
+----
+$ git checkout -b BRANCH_NAME upstream/main
+----
+. Make the desired edits.
++
+The documentation is written in link:http://asciidoc.org/[AsciiDoc]. Review the xref:asciidoc_guidelines[AsciiDoc Guidelines and Tips] section of this guide before making changes.
+. Build the guides to verify your changes.
+.. Navigate to the appropriate guide's directory and issue the following command.  Note that you must have link:http://asciidoctor.org/[Asciidoctor] installed.
++
+[source,options="nowrap"]
+----
+$ cd documentation/<document>
+$ asciidoctor -t -dbook -a toc -o html master.adoc
+----
+.. View the generated HTML file in a browser.
+. Add each new or updated file to git.
++
+[source,options="nowrap"]
+----
+$ git add FILE_NAME.adoc
+----
+. Commit the changes locally.
++
+[source,options="nowrap"]
+----
+$ git commit -m "My commit message."
+----
+. Push the changes to your forked repository.
++
+[source,options="nowrap"]
+----
+$ git push origin HEAD
+----
+. Open a pull request to merge your changes to the master branch.
+.. Navigate to your forked repository in a browser:  https://github.com/YOUR_USERNAME/konveyor/tackle-documentation.
+.. Open a new pull request. Be sure to review the diff before submitting.
+.. A member of the Tackle documentation team will merge or provide feedback on your request.
+
+== Building the Guides
+
+Navigate to the appropriate guide's directory and issue the following command.  Note that you must have link:http://asciidoctor.org/[Asciidoctor] installed.
+
+[source,options="nowrap"]
+----
+$ cd documentation/<document>
+$ asciidoctor -t -dbook -a toc -o html master.adoc
+----
+
+View the generated HTML file in a browser.
+
+== Publishing the Guides
+
+The Tackle guides are published downstream on the link:https://access.redhat.com/documentation/en/migration_toolkit_for_applications/[Red Hat Customer Portal].

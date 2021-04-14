@@ -2,66 +2,27 @@
 
 # Tackle documentation
 
-Tackle is an upstream project for refactoring applications for Kubernetes. Tackle is part of the [Konveyor project](https://www.konveyor.io/).
+This repository contains the files for Tackle documentation. Tackle is part of the [Konveyor project](https://www.konveyor.io/).
+
+[Tackle](https://github.com/konveyor/tackle) is a collection of tools that support the modernization and migration of applications to Kubernetes. The tools are microservices, which are accessible from a common  [Tackle UI](https://github.com/konveyor/tackle-ui/).  
+
+* [Tackle Application Inventory](https://github.com/konveyor/tackle-application-inventory) allows users to maintain their portfolio of applications, to link them to the business services that they support, and to define their interdependencies. The Application Inventory uses an extensible tagging model to add metadata. The Application Inventory is used to select an application for an assessment by Pathfinder.
+
+* [Tackle Pathfinder](https://github.com/konveyor/tackle-pathfinder) is an interactive, questionnaire-based tool that assesses the suitability of applications for modernization so that they can be deployed in containers on an enterprise Kubernetes platform. The tool generates reports about an application’s suitability for Kubernetes, the associated risks, and creates an adoption plan.
+
+* [Tackle Controls](https://github.com/konveyor/tackle-controls) are a collection of entities that add value to Application Inventory and the Pathfinder assessment. They comprise business services, stakeholders, stakeholder groups, job functions, tag types, and tags.  
 
 ## Contributing to Tackle documentation
 
-Read the [Guidelines for Red Hat Documentation](https://redhat-documentation.github.io/) before opening a pull request.
+This project is [Apache 2.0 licensed](LICENSE) and accepts contributions via
+GitHub pull requests.
 
-### Upstream and downstream variables
+See the [Contributors Guide](CONTRIBUTING.adoc) for details.
 
-This document uses the following variables to ensure that upstream and downstream product names and versions are rendered correctly.
+## Code of conduct
 
-| Variable | Upstream value | Downstream value |
-| -------- | -------------- | ---------------- |
-| project-full | Tackle | MTA Pathfinder |
-| project-short | Tackle | MTA Pathfinder |
-| project-version | 1.0 | 1.0 |
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-Variables cannot be used in CLI commands or code blocks unless you include the "attributes" keyword:
+## PR preview rendering
 
-	[options="nowrap" subs="+quotes,+attributes"]
-	----
-	# ls {VariableName}
-	----
-
-You can hide or show specific blocks, paragraphs, warnings or chapters with the `build` variable. Its value can be set to "downstream" or "upstream":
-
-	ifeval::["build" == "upstream"]
-	This content is only relevant for Tackle.
-	endif::[]
-
-### Building a document preview
-
-You can build a document preview by running a Jekyll container.
-
-You must have Podman installed.
-
-1. Clone the repository:
-  ```console
-  $ git clone -b source https://github.com/konveyor/tackle-documentation.git && cd tackle-documentation
-  ```
-2. Create `.jekyll-cache` and `_site` directories:
-  ```console
-  $ for i in .jekyll-cache _site; do mkdir ${i} && chmod 777 ${i}; done
-  ```
-3. Create a `Gemfile.lock` file:
-  ```console
-  $ for i in Gemfile.lock; do touch ${i} && chmod 777 ${i}; done
-  ```
-4. Run a Jekyll container:
-- If your operating system is SELinux-enabled:
-
-  ```console
-  $ podman run -it --rm --name jekyll -p 4000:4000 -v $(pwd):/srv/jekyll:Z jekyll/jekyll jekyll serve --watch --future
-  ```
-
-  **Note**: The `Z` at the end of the volume (`-v`) relabels the contents so that they can be written from within the container, like running `chcon -Rt svirt_sandbox_file_t -l s0:c1,c2` yourself. You must run this command in the cloned directory.
-
-- If your operating system is not SELinux-enabled:
-
-  ```console
-  $ podman run -it --rm --name jekyll -p 4000:4000 -v $(pwd):/srv/jekyll jekyll/jekyll jekyll serve --watch --future
-  ```
-
-5. Navigate to `http://<localhost>:4000` in a web browser to view the preview.
+[![](https://www.netlify.com/img/global/badges/netlify-light.svg)](https://www.netlify.com)
