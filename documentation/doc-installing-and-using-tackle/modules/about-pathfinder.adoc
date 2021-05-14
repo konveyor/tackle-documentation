@@ -1,0 +1,8 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="about-pathfinder_{context}"]
+== About {project-short}
+
+TBD

@@ -12,6 +12,8 @@ This repository contains the files for Tackle documentation. Tackle is part of t
 
 * [Tackle Controls](https://github.com/konveyor/tackle-controls) are a collection of entities that add value to Application Inventory and the Pathfinder assessment. They comprise business services, stakeholders, stakeholder groups, job functions, tag types, and tags.  
 
+* [Tackle DiVA](https://github.com/konveyor/tackle-diva) is a data-centric application analysis tool. It imports a set of target application source files and provides database/transaction analysis results.
+
 ## Contributing to Tackle documentation
 
 This project is [Apache 2.0 licensed](LICENSE) and accepts contributions via

@@ -1,5 +1,6 @@
 # Tackle Documentation
 :page-layout: default
+:keywords: migration, Kubernetes, modernization, KubeVirt, inventory, pathfinder
 
 ## What is Tackle?
 
