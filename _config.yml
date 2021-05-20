@@ -31,8 +31,7 @@ asciidoctor:
   - context=tackle
   - description=Refactoring applications for Kubernetes
   - abstract=Tackle enables you to refactor your applications for Kubernetes.
-  - keywords=migration, Kubernetes, modernization
-  - author=Red Hat Modernization and Migration Solutions documentation team
+  - author=Tackle documentation team
   - showtitle=@
   - build=upstream
   - imagesdir=../modules/images
@@ -40,8 +39,10 @@ asciidoctor:
   - project-full=Tackle
   - project-first=Tackle
   - the-lc=
-  - The=
+  - the=
+  - ocp=OpenShift Container Platform
   - project-version=1.0
+  - kebab=Options menu image:kebab.png[title="Options menu",height=20]
   safe: unsafe
 
 exclude:

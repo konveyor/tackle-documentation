@@ -1,0 +1,8 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='importing-application_{context}']
+= Importing an application
+
+You can import an application into the {project-short} web console.

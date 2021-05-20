@@ -1,20 +1,23 @@
 // Attributes for MTA Pathfinder (downstream)
+// Attributes for Tackle (upstream) are in _config.yml
+
+// text attributes
+:kebab: Options menu image:kebab.png[title="Options menu",height=20]
+:project-short: Pathfinder
+:project-full: Migration Toolkit for Applications Pathfinder
+:the: The
+:the-lc: the
+:project-first: Migration Toolkit for Applications Pathfinder
+:project-version: 1.0
+:namespace:
+:ocp: OpenShift Container Platform
+
+// metadata attributes
 :icons: font
 :toc: macro
 :experimental:
 :imagesdir: modules/images
-:kebab: Options menu image:kebab.png[title="Options menu"]
 :build: downstream
-:project-short: MTA Pathfinder
-:project-full: Migration Toolkit for Applications Pathfinder
-:the: The
-:the-lc: the
-:project-first: Migration Toolkit for Applications (MTA) Pathfinder
-:project-version: 1.0
-:namespace:
-
-:abstract: {The} {project-first} enables you to refactor your applications for Kubernetes.
+:abstract: {the} {project-first} enables you to refactor your applications for Kubernetes.
 :title: Installing and using {the-lc} {project-full}
 :subtitle:
-
-// Attributes for Tackle (upstream) are in _config.yml
