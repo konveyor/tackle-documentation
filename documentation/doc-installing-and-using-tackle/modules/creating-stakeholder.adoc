@@ -1,0 +1,29 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='creating-stakeholder_{context}']
+= Creating a stakeholder
+
+You can create a stakeholder in the *Controls* page of the {project-short} web console.
+
+.Prerequisites
+
+* The stakeholder must have a valid email address.
+
+.Procedure
+
+. Click *Controls* and then click *Stakeholders*.
+. Click *Create new*.
+. Complete the following fields:
+
+* *Email*: Email address of the stakeholder.
+* *Display name*: Name of the stakeholder.
+* *Job function*: Optional. You can select a predefined job function or type a job function to create it.
+* *Groups*: Optional. You can select one or more stakeholder groups from the a list of stakeholder groups that you have defined.
+
+. Click *Create*.
++
+The new stakeholder is displayed in the *Stakeholders* tab of the *Controls* page.
+
+. Expand the stakeholder to view the stakeholder groups to which the stakeholder belongs.

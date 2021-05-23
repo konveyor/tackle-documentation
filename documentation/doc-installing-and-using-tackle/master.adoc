@@ -18,13 +18,33 @@ endif::[]
 
 {the} {project-first} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting on {ocp}.
 
-{project-short} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, to discuss risks that {project-short} might flag, and to reach a consensus in formulating recommendations for each application.
-
-{project-short} provides the following services in a web console:
-
-* Controls: Manages data describing applications and stakeholders, for example, job function, business service, stakeholder
-* Application inventory: Manages the application portfolio and groups the applications for analysis or assessment
-* Reports: Displays the assessments and reviews for applications in the application inventory. The reports are dynamic and can display results for applications grouped by filters.
+{project-short} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, discuss any risks that {project-short} flags, and to reach a consensus in formulating recommendations for each application.
 
 include::modules/about-pathfinder.adoc[leveloffset=+1]
 include::modules/installing-pathfinder.adoc[leveloffset=+1]
+
+== Managing stakeholders, job functions, business services, and tags
+
+You can manage the following data in the *Controls* page of the {project-full} web console:
+
+* Stakeholders: Individuals with an interest in the applications or subject matter experts who can contribute to the application assessment.
++
+A stakeholder can be the owner of a business service.
+* Stakeholder groups: Groups of related stakeholders.
++
+A stakeholder can belong to one or more stakeholder groups.
+* Job functions: Attribute of a stakeholder.
++
+You can define new job functions or use predefined job functions, for example, Business Analyst or Program Manager.
+* Business services: Attribute of an application, for example, credit card service, transportation, or IT support.
++
+A business service is owned by a stakeholder.
+* Tags: Attribute of an application and is used for creating filters and searches.
++
+A tag is associated with a tag type that determines its display rank and color.
+
+include::modules/creating-stakeholder.adoc[leveloffset=+2]
+include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
+include::modules/creating-business-service.adoc[leveloffset=+2]
+include::modules/creating-tag-type.adoc[leveloffset=+2]
+include::modules/creating-tag.adoc[leveloffset=+2]

@@ -3,7 +3,7 @@
 
 // text attributes
 :kebab: Options menu image:kebab.png[title="Options menu",height=20]
-:project-short: Pathfinder
+:project-short: MTA Pathfinder
 :project-full: Migration Toolkit for Applications Pathfinder
 :the: The
 :the-lc: the
@@ -18,6 +18,6 @@
 :experimental:
 :imagesdir: modules/images
 :build: downstream
-:abstract: {the} {project-first} enables you to refactor your applications for Kubernetes.
-:title: Installing and using {the-lc} {project-full}
+:abstract: {project-first} enables you to refactor your applications for Kubernetes.
+:title: Installing and using {project-full}
 :subtitle:

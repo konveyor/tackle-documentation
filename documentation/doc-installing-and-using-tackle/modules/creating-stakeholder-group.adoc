@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='creating-stakeholder-group_{context}']
+= Creating a stakeholder group
+
+You can create stakeholder groups to group related stakeholders in the *Controls* page of the {project-short} web console.
+
+.Procedure
+
+. Click *Controls* and then click *Stakeholder groups*.
+. Click *Create new*.
+. Complete the following fields:
+
+* *Name*: Name of the stakeholder group.
+* *Description*: Optional. Description of the stakeholder group.
+* *Member(s)*: Optional. Select one or more stakeholders to add to the group.
+
+. Click *Create*.
++
+The new stakeholder group is displayed in the *Stakeholder groups* tab of the *Controls* page.
+
+. Expand the stakeholder group to view the group members.
