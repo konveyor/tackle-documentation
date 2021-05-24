@@ -23,6 +23,7 @@ endif::[]
 include::modules/about-pathfinder.adoc[leveloffset=+1]
 include::modules/installing-pathfinder.adoc[leveloffset=+1]
 
+[id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
 == Managing stakeholders, job functions, business services, and tags
 
 You can manage the following data in the *Controls* page of the {project-full} web console:
@@ -48,3 +49,13 @@ include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
 include::modules/creating-business-service.adoc[leveloffset=+2]
 include::modules/creating-tag-type.adoc[leveloffset=+2]
 include::modules/creating-tag.adoc[leveloffset=+2]
+
+[id="managing-applications_{context}"]
+== Managing applications
+
+You can manage your application portfolio in the *Application Inventory* page of the {project-full} web console.
+
+include::modules/creating-application.adoc[leveloffset=+2]
+include::modules/tagging-applications.adoc[leveloffset=+2]
+include::modules/adding-business-service-to-applications.adoc[leveloffset=+2]
+include::modules/managing-application-dependencies.adoc[leveloffset=+2]

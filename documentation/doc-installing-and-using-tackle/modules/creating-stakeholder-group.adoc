@@ -15,7 +15,7 @@ You can create stakeholder groups to group related stakeholders in the *Controls
 
 * *Name*: Name of the stakeholder group.
 * *Description*: Optional. Description of the stakeholder group.
-* *Member(s)*: Optional. Select one or more stakeholders to add to the group.
+* *Member(s)*: Optional. You can select one or more stakeholders to add to the group.
 
 . Click *Create*.
 +

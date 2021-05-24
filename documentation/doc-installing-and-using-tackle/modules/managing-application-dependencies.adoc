@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='managing-application-dependencies_{context}']
+= Managing application dependencies
+
+You can manage application dependencies in the *Application Inventory* page of the {project-short} web console.
+
+.Prerequisites
+
+* The *Application Inventory* must contain at least two applications.
+
+.Procedure
+
+. Click *Application Inventory*.
+. Click the {kebab} beside an application and select *Manage dependencies*.
+. Select applications in the northbound or southbound dependencies fields.
++
+[NOTE]
+====
+To remove dependencies, delete the applications in the dependencies fields.
+====
+. Click *Close*.
