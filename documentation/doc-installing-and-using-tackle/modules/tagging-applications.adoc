@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='tagging-applications_{context}']
+= Tagging applications
+
+You can tag one or more applications in the *Application Inventory* page of the {project-short} web console.
+
+.Prerequisites
+
+* The *Application Inventory* must contain at least one application.
+* The *Controls* must contain at least one tag.
+
+.Procedure
+
+. Click *Application Inventory*.
+. Select one or more applications.
+. Click the {kebab} in the toolbar and select *Add tag*.
+. Select one or more tags and then click *Apply tags*.
+
+. Expand an application to view its details.
++
+The display order of the tags is determined by the *Rank* of the tag type.
