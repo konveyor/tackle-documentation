@@ -1,0 +1,26 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='creating-business-service_{context}']
+= Creating a business service
+
+A business service is an attribute of an application. You can create a business service in the *Controls* page of the {project-short} web console.
+
+.Prerequisites
+
+* You must have added a stakeholder who is the business service _owner_.
+
+.Procedure
+
+. Click *Controls* and then click *Business services*.
+. Click *Create new*.
+. Complete the following fields:
+
+* *Name*: Name of the business service.
+* *Description*: Optional. Description of the business service.
+* *Owner*: Select a stakeholder.
+
+. Click *Create*.
++
+The new business service is displayed in the *Business services* tab of the *Controls* page.

@@ -3,6 +3,10 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id="about-pathfinder_{context}"]
-== About {project-short}
+== About {project-full}
 
-TBD
+{project-full} provides the following services in a web console:
+
+* _Controls_ enables you to manage data describing applications and stakeholders, for example, job functions, business services, and stakeholder groups.
+* _Application Inventory_ enables you to manage your application portfolio and to group applications for analysis or assessment.
+* _Reports_ displays assessments and reviews for the applications in the Application Inventory. The reports are dynamic and can display results for a filtered list of applications.

@@ -1,0 +1,24 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='creating-tag-type_{context}']
+= Creating a tag type
+
+A tag type defines the display rank and color of one or more tags. Tags are applied to applications in order to create filters and groups of applications.
+
+You must create a tag type before you can create a tag.
+
+.Procedure
+
+. Click *Controls* and then click *Tags*.
+. Click *Create tag type*.
+. Complete the following fields:
+
+* *Name*: Name of the tag type.
+* *Rank*: Optional. The rank determines the order in which the tags are displayed in the Application Inventory.
+* *Color*: Select a display color.
+
+. Click *Create*.
++
+The new tag type is displayed in the *Tags* tab of the *Controls* page.

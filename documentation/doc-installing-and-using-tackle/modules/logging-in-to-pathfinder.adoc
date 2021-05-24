@@ -1,0 +1,22 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="logging-in-to-pathfinder_{context}"]
+== Logging in to {project-short}
+
+You can log in to the {project-short} web console.
+
+.Prerequisites
+
+* You must have {project-short} installed.
+
+.Procedure
+
+. Log in to the {ocp} web console.
+. Click *Networking* -> *Routes*.
+. Select the +{project-short}+ project in the *Project:* list.
+. Click the URL for the `tackle-ui` service to open the login page for the {project-short} web console.
+. Enter your *Username* and *Password* and click *Log in*.
++
+The {project-short} web console is displayed.

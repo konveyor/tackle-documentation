@@ -1,0 +1,27 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='creating-tag_{context}']
+= Creating a tag
+
+You can apply tags to applications in the Application Inventory for filtering and searching applications. Tags are grouped by tag types.
+
+.Prerequisites
+
+* You must have created at least one tag type.
++
+A _tag type_ defines the display rank and color of one or more tags.
+
+.Procedure
+
+. Click *Controls* and then click *Tags*.
+. Click *Create tag*.
+. Complete the following fields:
+
+* *Name*: Name of the tag.
+* *Tag type*: Select a tag type.
+
+. Click *Create*.
++
+The new tag is displayed under its tag type in *Tags* tab of the *Controls* page.
