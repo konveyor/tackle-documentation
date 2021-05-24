@@ -20,7 +20,7 @@ You can create a stakeholder in the *Controls* page of the {project-short} web c
 * *Email*: Email address of the stakeholder.
 * *Display name*: Name of the stakeholder.
 * *Job function*: Optional. You can select a predefined job function or type a job function to create it.
-* *Groups*: Optional. You can select one or more stakeholder groups from the a list of stakeholder groups that you have defined.
+* *Groups*: Optional. You can select one or more stakeholder groups from a list of stakeholder groups that you have created.
 
 . Click *Create*.
 +
