@@ -5,7 +5,9 @@
 [id='creating-tag_{context}']
 = Creating a tag
 
-You can apply tags to applications in the Application Inventory for filtering and searching applications. Tags are grouped by tag types.
+You can create a tag in the *Controls* page of the {project-short} web console.
+
+Tags are applied to applications in the *Application Inventory* page for filtering and searching applications. Tags are grouped by tag types.
 
 .Prerequisites
 
