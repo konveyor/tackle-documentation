@@ -5,12 +5,12 @@
 [id='adding-business-service-to-applications_{context}']
 = Adding a business service to applications
 
-You can add a business service to one or more applications in the *Application Inventory* page of the {project-short} web console.
+You can add a business service to one or more applications in the Application Inventory.
 
 .Prerequisites
 
-* The *Application Inventory* must contain at least one application.
-* The *Controls* must contain a business service.
+* The Application Inventory must contain at least one application.
+* The Controls must contain a business service.
 
 .Procedure
 

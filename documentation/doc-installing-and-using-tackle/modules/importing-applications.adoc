@@ -1,0 +1,29 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='importing-applications_{context}']
+= Importing applications
+
+You can import multiple applications into the *Application Inventory* page of the {project-short} web console by using a CSV file.
+
+The CSV file must contain the following fields:
+
+* `Record Type 1`: `1`. Required field. The value must be `1`.
+* `Application Name`: Required field.
+* `Description`: Optional.
+* `Comments`: Optional.
+* `Business Service`: Optional.
+* `Tag Type 1`: Optional unless you are creating a tag.
+* `Tag 1`: If you create a tag, it must have a corresponding `Tag Type`.
++
+You can create additional tags by adding `Tag Type` and `Tag` fields.
+
+.Procedure
+
+. Click *Application Inventory*.
+. Click the {kebab} in the toolbar and select *Import*.
+. Browse to the CSV file and click *Open*.
+. Click *Import*.
++
+The imported applications are displayed in the Application Inventory.

@@ -5,7 +5,7 @@
 [id='managing-application-dependencies_{context}']
 = Managing application dependencies
 
-You can manage application dependencies in the *Application Inventory* page of the {project-short} web console.
+You can add, delete, and view application dependencies in the *Application Inventory* page of the {project-short} web console.
 
 .Prerequisites
 
@@ -21,4 +21,5 @@ You can manage application dependencies in the *Application Inventory* page of t
 ====
 To remove dependencies, delete the applications in the dependencies fields.
 ====
+
 . Click *Close*.
