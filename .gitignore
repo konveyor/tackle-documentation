@@ -2,4 +2,4 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-documentation/doc-user-guide/build/*
+documentation/doc-installing-and-using-tackle/build/*

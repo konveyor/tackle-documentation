@@ -30,16 +30,12 @@ asciidoctor:
   - title=Installing and using Tackle
   - context=tackle
   - description=Refactoring applications for Kubernetes
-  - abstract=Tackle enables you to refactor your applications for Kubernetes.
+  - abstract=Tackle enables you to assess your applications for their suitability for replatforming on Kubernetes.
   - author=Tackle documentation team
   - showtitle=@
   - build=upstream
   - imagesdir=../modules/images
-  - project-short=Tackle
-  - project-full=Tackle
-  - project-first=Tackle
-  - the-lc=
-  - the=
+  - project-name=Tackle
   - ocp=OpenShift Container Platform
   - project-version=1.0
   - kebab=Options menu image:kebab.png[title="Options menu",height=20]
