@@ -5,7 +5,7 @@
 [id='creating-business-service_{context}']
 = Creating a business service
 
-A business service is an attribute of an application. You can create a business service in the *Controls* page of the {project-short} web console.
+A business service is an attribute of an application. You can create a business service in the *Controls* page of the {project-name} web console.
 
 .Prerequisites
 

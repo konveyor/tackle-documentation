@@ -3,11 +3,7 @@
 
 // text attributes
 :kebab: Options menu image:kebab.png[title="Options menu",height=20]
-:project-short: MTA Pathfinder
-:project-full: Migration Toolkit for Applications Pathfinder
-:the: The
-:the-lc: the
-:project-first: Migration Toolkit for Applications Pathfinder
+:project-name: MTA Pathfinder
 :project-version: 1.0
 :namespace:
 :ocp: OpenShift Container Platform
@@ -18,6 +14,6 @@
 :experimental:
 :imagesdir: modules/images
 :build: downstream
-:abstract: {project-first} enables you to refactor your applications for Kubernetes.
-:title: Installing and using {project-full}
+:abstract: Migration Toolkit for Applications (MTA) Pathfinder enables you to assess your applications for their suitability for rehosting on {ocp}.
+:title: Installing and using {project-name}
 :subtitle:

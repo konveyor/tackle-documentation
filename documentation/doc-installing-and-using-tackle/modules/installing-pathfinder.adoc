@@ -3,6 +3,6 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id="installing-pathfinder_{context}"]
-== Installing {project-short}
+== Installing {project-name}
 
 TBD

@@ -5,7 +5,7 @@
 [id='tagging-applications_{context}']
 = Tagging applications
 
-You can tag one or more applications in the *Application Inventory* page of the {project-short} web console.
+You can tag one or more applications in the *Application Inventory* page of the {project-name} web console.
 
 .Prerequisites
 

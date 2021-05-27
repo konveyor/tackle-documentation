@@ -4,7 +4,7 @@ ifeval::["{build}" == "downstream"]
 = {title}
 endif::[]
 ifeval::["{build}" == "upstream"]
-= {title} ({project-version} draft)
+= {title} (draft)
 endif::[]
 :toc:
 :toc-title:
@@ -16,33 +16,28 @@ ifeval::["{build}" == "downstream"]
 include::modules/making-open-source-more-inclusive.adoc[]
 endif::[]
 
-{the} {project-first} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting on {ocp}.
-
-{project-short} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, discuss any risks that {project-short} flags, and to reach a consensus in formulating recommendations for each application.
-
-include::modules/about-pathfinder.adoc[leveloffset=+1]
-include::modules/installing-pathfinder.adoc[leveloffset=+1]
+include::modules/about-pathfinder.adoc[]
+include::modules/installing-pathfinder.adoc[]
 
 [id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
-== Managing stakeholders, job functions, business services, and tags
+== Managing the Controls
 
-You can manage the following data in the *Controls* page of the {project-full} web console:
+The *Controls* page of the {project-name} web console enables you to manage the following:
 
-* Stakeholders: Individuals with an interest in the applications or subject matter experts who can contribute to the application assessment.
-+
-A stakeholder can be the owner of a business service.
-* Stakeholder groups: Groups of related stakeholders.
-+
-A stakeholder can belong to one or more stakeholder groups.
-* Job functions: Attribute of a stakeholder.
-+
-You can define new job functions or use predefined job functions, for example, Business Analyst or Program Manager.
-* Business services: Attribute of an application, for example, credit card service, transportation, or IT support.
-+
-A business service is owned by a stakeholder.
-* Tags: Attribute of an application and is used for creating filters and searches.
-+
-A tag is associated with a tag type that determines its display rank and color.
+Stakeholder::
+Individual with an interest in an application or a subject matter expert. Stakeholders are contributors to the application assessment process.
+
+Stakeholder group::
+Group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.
+
+Job function::
+Attribute of a stakeholder. You can define a new job function or use predefined job functions, for example, Business Analyst or Program Manager.
+
+Business service::
+Attribute of an application, for example, credit card service, transportation, or IT support. A business service is owned by a stakeholder.
+
+Tag::
+Attribute of an application. Tags are used for creating filters and searches. Each tag is associated with a _tag type_ that determines its display rank and color and enables you to group related tags.
 
 include::modules/creating-stakeholder.adoc[leveloffset=+2]
 include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
@@ -51,9 +46,9 @@ include::modules/creating-tag-type.adoc[leveloffset=+2]
 include::modules/creating-tag.adoc[leveloffset=+2]
 
 [id="managing-applications_{context}"]
-== Managing applications
+== Managing the Application Inventory
 
-You can manage your application portfolio in the *Application Inventory* page of the {project-full} web console.
+You can manage your application portfolio in the *Application Inventory* page of the {project-name} web console.
 
 include::modules/creating-application.adoc[leveloffset=+2]
 include::modules/importing-applications.adoc[leveloffset=+2]

@@ -1,5 +1,5 @@
 <title>{title}</title>
-<productname>{project-full}</productname>
+<productname>{project-name}</productname>
 <productnumber>{project-version}</productnumber>
 <subtitle>{subtitle}</subtitle>
 <abstract>

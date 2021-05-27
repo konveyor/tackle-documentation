@@ -3,10 +3,23 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id="about-pathfinder_{context}"]
-== About {project-full}
+== About {project-name}
 
-{project-full} provides the following services in a web console:
+{project-name} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting on {ocp}.
 
-* _Controls_ enables you to manage data describing applications and stakeholders, for example, job functions, business services, and stakeholder groups.
-* _Application Inventory_ enables you to manage your application portfolio and to group applications for analysis or assessment.
-* _Reports_ displays assessments and reviews for the applications in the Application Inventory. The reports are dynamic and can display results for a filtered list of applications.
+{project-name} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, to discuss risks flagged by {project-name}, and to reach a consensus in formulating recommendations for each application.
+
+{project-name} provides the following services in a web console:
+
+Controls::
+The Controls enable you to manage the following:
+* Stakeholders and stakeholder groups
+* Job functions
+* Business services
+* Tags and tag types
+
+Application Inventory::
+The Application Inventory enables you to manage your application portfolio and to group applications for assessment.
+
+Reports::
+Reports display the results of the assessments of applications in the Application Inventory. The reports are dynamic and can be configured to display the results for a filtered list of applications.
