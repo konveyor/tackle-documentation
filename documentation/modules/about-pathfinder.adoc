@@ -7,7 +7,7 @@
 
 {project-name} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting on {ocp}.
 
-{project-name} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, to discuss risks flagged by {project-name}, and to reach a consensus in formulating recommendations for each application.
+{project-name} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders to gather information about applications, to discuss risks flagged by {project-name}, and to reach a consensus in formulating recommendations for each application.
 
 {project-name} provides the following services in a web console:
 

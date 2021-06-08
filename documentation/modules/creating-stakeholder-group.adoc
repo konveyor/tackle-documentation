@@ -9,8 +9,8 @@ You can create stakeholder groups in the *Controls* page of the {project-name} w
 
 .Procedure
 
-. Click *Controls* and then click *Stakeholder groups*.
-. Click *Create new*.
+. In the {project-name} web console, click *Controls*.
+. Click *Stakeholder groups* and then click *Create new*.
 . Complete the following fields:
 
 * *Name*: Name of the stakeholder group.

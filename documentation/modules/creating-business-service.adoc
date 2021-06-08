@@ -13,8 +13,8 @@ A business service is an attribute of an application. You can create a business 
 
 .Procedure
 
-. Click *Controls* and then click *Business services*.
-. Click *Create new*.
+. In the {project-name} web console, click *Controls*.
+. Click *Business services* and then click *Create new*.
 . Complete the following fields:
 
 * *Name*: Name of the business service.

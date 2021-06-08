@@ -5,14 +5,11 @@
 [id="starting-assessment_{context}"]
 = Starting an assessment
 
-You can start an application assessment in the *Application Inventory* page of the {project-name} web console.
-
-.Prerequisites
-
-* You must have an application in the *Application Inventory* page with the *Assessment* status, *Not started*.
+You can start an application assessment in the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
+. In the {project-name} web console, click *Application inventory*.
 . Select an application that has not been assessed and click the *Assess* button in the toolbar.
 . Select individual stakeholders or stakeholder groups and then click *Next*.
 . Select responses to questions on each page of the *Application assessment* wizard and then click *Next*.
@@ -24,4 +21,4 @@ All questions are mandatory.
 
 . When you have completed all the responses, click *Save* to save the assessment or *Save and review* to start the assessment review process.
 +
-The *Assessment* status of the application in the *Application Inventory* page is *Completed*.
+The *Assessment* status of the application in the *Application inventory* page is *Completed*.

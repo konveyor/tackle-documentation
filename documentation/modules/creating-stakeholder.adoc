@@ -13,8 +13,8 @@ You can create a stakeholder in the *Controls* page of the {project-name} web co
 
 .Procedure
 
-. Click *Controls* and then click *Stakeholders*.
-. Click *Create new*.
+. In the {project-name} web console, click *Controls*.
+. Click *Stakeholders* and then click *Create new*.
 . Complete the following fields:
 
 * *Email*: Email address of the stakeholder.

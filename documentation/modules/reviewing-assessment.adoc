@@ -5,23 +5,23 @@
 [id="reviewing-assessment_{context}"]
 = Reviewing an assessment
 
-You can review an application assessment in the *Application Inventory* page of the {project-name} web console.
-
-.Prerequisites
-
-* You must have an application in the *Application Inventory* page with the *Assessment* status, *Completed*.
+You can review an application assessment in the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
+. In the {project-name} web console, click *Application inventory*.
 . Select an application that has been assessed and click the *Review* button in the toolbar.
 . Review the application assessment in the *Assessment summary* section of the *Review* page.
 +
 The *Assessment summary* table contains a *Risk* column indicating the severity of the risk associated with each response.
 
-. Select a *Proposed action*, for example, *Rehost*, *Refactor*, *Retain*, *Replatform*, or *Retire*.
-. Select an *Effort estimate*, for example, *Small*, *Medium*, or *Large*.
-. Set values for *Business criticality* and *Work priority* between `1` and `10`.
+. Select a *Proposed action* and an *Effort estimate*.
+. Set values for *Business criticality* and *Work priority*.
 . Optional. Enter comments in the *Comments* field.
 . Click *Submit review*.
 +
-The *Review* status of the application in the *Application Inventory* page is *Completed*.
+The *Review* status of the application in the *Application inventory* page is *Completed*.
+
+. Click *Application inventory* and expand the application.
++
+The review results are displayed.

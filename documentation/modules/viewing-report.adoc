@@ -1,0 +1,16 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='viewing-report_{context}']
+= Viewing a report
+
+You can view a report of some or all assessment reviews in the *Reports* page of the {project-name} web console.
+
+.Procedure
+
+. Click *Reports*.
++
+By default, the report summarizes the assessment reviews for all applications that have completed assessments.
+
+. To filter the applications, clear the application check boxes in the *Adoption candidate distribution* section of the report.

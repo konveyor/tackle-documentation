@@ -27,4 +27,3 @@ The {project-name} Operator is a Community Operator. Red Hat provides no support
 . Select a project from the *Installed Namespace* list and click *Install*.
 . Click *Operators* -> *Installed Operators* to verify that the Operator is installed.
 . Click *Workloads* -> *Pods* to verify that the {project-name} pods are running.
-. Click *Networking* -> *Routes* and then click the `mta-pathfinder-web-console` route to open the web console in a new browser window.

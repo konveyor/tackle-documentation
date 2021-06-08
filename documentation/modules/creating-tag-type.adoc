@@ -13,8 +13,8 @@ You must create a tag type before you can create a tag.
 
 .Procedure
 
-. Click *Controls* and then click *Tags*.
-. Click *Create tag type*.
+. In the {project-name} web console, click *Controls*.
+. Click *Tags* and then click *Create tag type*.
 . Complete the following fields:
 
 * *Name*: Name of the tag type.

@@ -5,11 +5,11 @@
 [id='creating-application_{context}']
 = Creating an application
 
-You can create an application in the *Application Inventory* page of the {project-name} web console.
+You can create an application in the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
-. Click *Application Inventory* and then click *Create new*.
+. In the {project-name} web console, click *Application inventory* and then click *Create new*.
 . Complete the following fields:
 
 * *Name*: Name of the application.
@@ -20,6 +20,6 @@ You can create an application in the *Application Inventory* page of the {projec
 
 . Click *Create*.
 +
-The new application is displayed in the *Application Inventory* page.
+The new application is displayed in the *Application inventory* page.
 
 . Expand the application to view its details.
