@@ -18,7 +18,8 @@ You can review an application assessment in the *Application Inventory* page of 
 +
 The *Assessment summary* table contains a *Risk* column indicating the severity of the risk associated with each response.
 
-. Select a *Proposed action* and an *Effort estimate*.
+. Select a *Proposed action*, for example, *Rehost*, *Refactor*, *Retain*, *Replatform*, or *Retire*.
+. Select an *Effort estimate*, for example, *Small*, *Medium*, or *Large*.
 . Set values for *Business criticality* and *Work priority* between `1` and `10`.
 . Optional. Enter comments in the *Comments* field.
 . Click *Submit review*.
