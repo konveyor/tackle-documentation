@@ -5,4 +5,26 @@
 [id="installing-pathfinder_{context}"]
 == Installing {project-name}
 
-TBD
+*Needs verification*
+
+You can install the {project-name} on {ocp} 4.7 and later versions with the {project-name} Operator.
+
+[NOTE]
+====
+The {project-name} Operator is a Community Operator. Red Hat provides no support for Community Operators.
+====
+
+.Prerequisites
+
+* You must have `cluster-admin` privileges.
+
+.Procedure
+
+. Log in to the OpenShift web console.
+. Click *Operators* -> *OperatorHub*.
+. Use the *Search by keyword* field to locate the *{project-name}* Operator.
+. Click *Install*.
+. Select a project from the *Installed Namespace* list and click *Install*.
+. Click *Operators* -> *Installed Operators* to verify that the Operator is installed.
+. Click *Workloads* -> *Pods* to verify that the {project-name} pods are running.
+. Click *Networking* -> *Routes* and then click the `mta-pathfinder-web-console` route to open the web console in a new browser window.
