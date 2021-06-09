@@ -11,9 +11,9 @@ Tags are applied to applications in the *Application inventory* page for filteri
 
 .Prerequisites
 
-* You must have created at least one tag type.
+* The *Controls* must contain at least one tag type.
 +
-A _tag type_ defines the display rank and color of one or more tags.
+A tag type defines the display rank and color of one or more tags.
 
 .Procedure
 

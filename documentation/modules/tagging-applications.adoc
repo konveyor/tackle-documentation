@@ -7,11 +7,6 @@
 
 You can tag one or more applications in the *Application inventory* page of the {project-name} web console.
 
-.Prerequisites
-
-* The *Application inventory* must contain at least one application.
-* The *Controls* must contain at least one tag.
-
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.

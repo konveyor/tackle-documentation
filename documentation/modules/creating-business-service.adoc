@@ -9,7 +9,7 @@ A business service is an attribute of an application. You can create a business 
 
 .Prerequisites
 
-* You must have added a stakeholder who is the business service _owner_.
+* The *Controls* must contain the stakeholder who is the business service owner.
 
 .Procedure
 

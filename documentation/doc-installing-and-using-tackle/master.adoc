@@ -67,7 +67,4 @@ include::modules/editing-assessment.adoc[leveloffset=+2]
 include::modules/reviewing-assessment.adoc[leveloffset=+2]
 include::modules/deleting-assessment.adoc[leveloffset=+2]
 
-[id="managing-reports_{context}"]
-== Managing reports
-
-You can view and filter reports summarizing assessment reviews in the *Reports* page of the {project-name} web console.
+include::modules/about-reports.adoc[leveloffset=+1]

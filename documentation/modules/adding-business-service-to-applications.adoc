@@ -9,8 +9,8 @@ You can add a business service to one or more applications in the *Application i
 
 .Prerequisites
 
-* The Application Inventory must contain at least one application.
-* The Controls must contain a business service.
+* The *Application Inventory* must contain at least one application.
+* The *Controls* must contain a business service.
 
 .Procedure
 

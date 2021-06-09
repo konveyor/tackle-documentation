@@ -26,9 +26,9 @@ You can create `Tag Type <number>` and `Tag <number>` fields for additional tags
 
 .Prerequisites
 
-* Create a CSV file for the applications.
+* You must create a CSV file.
 +
-If you specify values for the business service, tag, or tag type columns, the values must be created by using the *Controls* page of the {project-name} web console.
+If you specify values for the business service, tag, or tag type columns, the values must exist in the *Controls*.
 
 .Procedure
 

@@ -21,4 +21,4 @@ All questions are mandatory.
 
 . When you have completed all the responses, click *Save* to save the assessment or *Save and review* to start the assessment review process.
 +
-The *Assessment* status of the application in the *Application inventory* page is *Completed*.
+The *Assessment* status of the application is *Completed*.

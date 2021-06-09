@@ -1,0 +1,29 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id='about-reports_{context}']
+= About reports
+
+You can view a report of the assessments and reviews in the *Reports* page of the {project-name} web console.
+
+The *Reports* page contains the following sections:
+
+Current landscape::
+This section displays all applications according to their risk levels.
+
+Adoption candidate distribution::
+This section lists the assessed applications with the following columns:
+* *Criticality* is based on the *Business criticality* value of the review.
+* *Priority* is based on the *Work priority* value of the review.
+* *Confidence* is based on the severity of the identified risks.
+* *Effort* is based on the *Effort estimate* value of the review.
+* *Decision* is based on the *Proposed action* value of the review.
++
+By default, all applications are selected. You can clear some of the application check boxes to filter the report.
+
+Suggested adoption plan::
+This section displays a suggested adoption plan based on effort, priority, and dependencies.
+
+Identified risks::
+This section lists the risks identified in the assessments for all applications.

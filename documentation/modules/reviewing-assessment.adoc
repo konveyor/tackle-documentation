@@ -20,7 +20,7 @@ The *Assessment summary* table contains a *Risk* column indicating the severity 
 . Optional. Enter comments in the *Comments* field.
 . Click *Submit review*.
 +
-The *Review* status of the application in the *Application inventory* page is *Completed*.
+The *Review* status of the application is *Completed*.
 
 . Click *Application inventory* and expand the application.
 +
