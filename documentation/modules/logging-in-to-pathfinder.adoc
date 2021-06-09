@@ -3,7 +3,7 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id="logging-in-to-pathfinder_{context}"]
-= Logging in to {project-name}
+= Logging in to the web console
 
 You can log in to the {project-name} web console.
 
