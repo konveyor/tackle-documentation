@@ -36,7 +36,7 @@ asciidoctor:
   - build=upstream
   - imagesdir=../modules/images
   - project-name=Tackle
-  - ocp=OpenShift Container Platform
+  - ocp=Enterprise Kubernetes Platform
   - project-version=1.0
   - kebab=Options menu image:kebab.png[title="Options menu",height=20]
   safe: unsafe
