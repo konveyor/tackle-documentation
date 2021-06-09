@@ -16,8 +16,8 @@ ifeval::["{build}" == "downstream"]
 include::modules/making-open-source-more-inclusive.adoc[]
 endif::[]
 
-include::modules/about-pathfinder.adoc[leveloffset=+1]
-include::modules/installing-pathfinder.adoc[leveloffset=+1]
+include::modules/about-pathfinder.adoc[]
+include::modules/installing-pathfinder.adoc[]
 
 include::modules/logging-in-to-pathfinder.adoc[leveloffset=+2]
 
