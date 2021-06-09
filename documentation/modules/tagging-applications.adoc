@@ -5,16 +5,11 @@
 [id='tagging-applications_{context}']
 = Tagging applications
 
-You can tag one or more applications in the *Application Inventory* page of the {project-name} web console.
-
-.Prerequisites
-
-* The *Application Inventory* must contain at least one application.
-* The *Controls* must contain at least one tag.
+You can tag one or more applications in the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
-. Click *Application Inventory*.
+. In the {project-name} web console, click *Application inventory*.
 . Select one or more applications.
 . Click the {kebab} in the toolbar and select *Add tag*.
 . Select one or more tags and then click *Apply tags*.

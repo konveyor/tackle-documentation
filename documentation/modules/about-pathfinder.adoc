@@ -5,21 +5,21 @@
 [id="about-pathfinder_{context}"]
 == About {project-name}
 
-{project-name} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting on {ocp}.
+{project-name} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting, replatforming, or refactoring for {ocp}.
 
-{project-name} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders, led by a Solution Architect, to gather information about applications, to discuss risks flagged by {project-name}, and to reach a consensus in formulating recommendations for each application.
+{project-name} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders to gather information about applications, to discuss risks flagged by {project-name}, and to reach a consensus in formulating recommendations for each application.
 
 {project-name} provides the following services in a web console:
 
 Controls::
-The Controls enable you to manage the following:
+The *Controls* enable you to manage the following:
 * Stakeholders and stakeholder groups
 * Job functions
 * Business services
 * Tags and tag types
 
-Application Inventory::
-The Application Inventory enables you to manage your application portfolio and to group applications for assessment.
+Application inventory::
+The *Application inventory* enables you to manage your application portfolio and to group applications for assessment.
 
 Reports::
-Reports display the results of the assessments of applications in the Application Inventory. The reports are dynamic and can be configured to display the results for a filtered list of applications.
+The *Reports* page displays the results of the application assessments and the assessment reviews in the *Application inventory*.

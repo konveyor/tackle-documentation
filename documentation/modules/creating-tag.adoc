@@ -7,18 +7,18 @@
 
 You can create a tag in the *Controls* page of the {project-name} web console.
 
-Tags are applied to applications in the *Application Inventory* page for filtering and searching applications. Tags are grouped by tag types.
+Tags are applied to applications in the *Application inventory* page for filtering and searching applications. Tags are grouped by tag types.
 
 .Prerequisites
 
-* You must have created at least one tag type.
+* The *Controls* must contain at least one tag type.
 +
-A _tag type_ defines the display rank and color of one or more tags.
+A tag type defines the display rank and color of one or more tags.
 
 .Procedure
 
-. Click *Controls* and then click *Tags*.
-. Click *Create tag*.
+. In the {project-name} web console, click *Controls*.
+. Click *Tags* and then click *Create tag*.
 . Complete the following fields:
 
 * *Name*: Name of the tag.

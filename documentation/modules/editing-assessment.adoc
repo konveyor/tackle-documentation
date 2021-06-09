@@ -5,14 +5,11 @@
 [id="editing-assessment_{context}"]
 = Editing an assessment
 
-You can edit an application assessment in the *Application Inventory* page of the {project-name} web console.
-
-.Prerequisites
-
-* You must have an application in the *Application Inventory* page with the *Assessment* status, *Completed*.
+You can edit an application assessment in the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
+. In the {project-name} web console, click *Application inventory*.
 . Select an application that has been assessed and click the *Assess* button in the toolbar.
 . Click *Continue* to confirm that you want to edit the assessment.
-. When you have updated your responses, click *Save* to save the assessment or *Save and review* to start the assessment review process.
+. After you have updated your responses, click *Save* to save the assessment or *Save and review* to start the assessment review process.

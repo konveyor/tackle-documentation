@@ -5,7 +5,7 @@
 [id='importing-applications_{context}']
 = Importing applications
 
-You can import multiple applications into the *Application Inventory* page of the {project-name} web console by using a CSV file.
+You can import multiple applications into the *Application inventory* page of the {project-name} web console by using a CSV file.
 
 [NOTE]
 ====
@@ -16,21 +16,23 @@ The CSV file must contain the following fields:
 
 * `Record Type 1`: Required field. The value must be `1`.
 * `Application Name`: Required field.
-* `Description`: Optional.
-* `Comments`: Optional.
-* `Business Service`: Optional.
-* `Tag Type 1`: Optional unless you are creating a tag.
-* `Tag 1`: Optional. If you create a tag, it must have a corresponding `Tag Type`.
+* `Description`: Can have a `null` value.
+* `Comments`: Can have a `null` value.
+* `Business Service`: Can have a `null` value.
+* `Tag Type 1`: Can have a `null` value.
+* `Tag 1`: Can have a `null` value.
 +
 You can create `Tag Type <number>` and `Tag <number>` fields for additional tags.
 
 .Prerequisites
 
-* If you specify values for the business service, tag, or tag type columns, the values must be created by using the *Controls* page of the {project-name} web console.
+* You must create a CSV file.
++
+If you specify values for the business service, tag, or tag type columns, the values must exist in the *Controls*.
 
 .Procedure
 
-. Click *Application Inventory*.
+. In the {project-name} web console, click *Application inventory*.
 . Click the {kebab} in the toolbar and select *Import*.
 . Browse to the CSV file and click *Open*.
 . Click *Import*.

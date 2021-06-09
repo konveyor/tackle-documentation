@@ -18,6 +18,7 @@ endif::[]
 
 include::modules/about-pathfinder.adoc[]
 include::modules/installing-pathfinder.adoc[]
+include::modules/logging-in-to-pathfinder.adoc[leveloffset=+2]
 
 [id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
 == Managing the Controls
@@ -48,7 +49,7 @@ include::modules/creating-tag.adoc[leveloffset=+2]
 [id="managing-applications_{context}"]
 == Managing applications
 
-You can manage your applications in the *Application Inventory* page of the {project-name} web console.
+You can create, import, tag, and modify your applications in the *Application inventory* page of the {project-name} web console.
 
 include::modules/creating-application.adoc[leveloffset=+2]
 include::modules/importing-applications.adoc[leveloffset=+2]
@@ -59,8 +60,11 @@ include::modules/managing-application-dependencies.adoc[leveloffset=+2]
 [id="managing-assessments_{context}"]
 == Managing assessments
 
-You can manage your application assessments in the *Application Inventory* page of the {project-name} web console.
+You can start, edit, review, and delete application assessments in the *Application inventory* page of the {project-name} web console.
 
 include::modules/starting-assessment.adoc[leveloffset=+2]
 include::modules/editing-assessment.adoc[leveloffset=+2]
 include::modules/reviewing-assessment.adoc[leveloffset=+2]
+include::modules/deleting-assessment.adoc[leveloffset=+2]
+
+include::modules/about-reports.adoc[leveloffset=+1]
