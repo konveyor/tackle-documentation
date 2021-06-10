@@ -5,12 +5,12 @@
 [id='creating-stakeholder-group_{context}']
 = Creating a stakeholder group
 
-You can create stakeholder groups in the *Controls* page of the {project-name} web console. Stakeholder groups enable you to assign multiple stakeholders to review an assessment.
+You can create stakeholder groups on the *Controls* page of the {project-name} web console. Stakeholder groups enable you to assign multiple stakeholders to review an assessment.
 
 .Procedure
 
 . In the {project-name} web console, click *Controls*.
-. Click *Stakeholder groups* and then click *Create new*.
+. Click the *Stakeholder groups* tab and then click *Create new*.
 . Complete the following fields:
 
 * *Name*: Name of the stakeholder group.
@@ -19,6 +19,6 @@ You can create stakeholder groups in the *Controls* page of the {project-name} w
 
 . Click *Create*.
 +
-The new stakeholder group is displayed in the *Stakeholder groups* tab of the *Controls* page.
+The new stakeholder group is displayed on the *Stakeholder groups* tab.
 
 . Expand the stakeholder group to view the group members.

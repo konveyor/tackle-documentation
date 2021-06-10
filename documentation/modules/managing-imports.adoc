@@ -5,7 +5,7 @@
 [id='managing-imports_{context}']
 = Managing application imports
 
-You can manage application imports in the *Application import* page of the {project-name} web console.
+You can manage application imports on the *Application import* page of the {project-name} web console.
 
 .Procedure
 
@@ -16,4 +16,4 @@ The *Application import* page displays a list of application imports.
 . Click the {kebab} beside an application import and select one of the following options:
 * *Delete* deletes the application import.
 * *View error report* displays a table of application import errors.
-* *Export errors* enables you to save the import errors as a CSV file.
+* *Export errors* enables you to save the application import errors as a CSV file.

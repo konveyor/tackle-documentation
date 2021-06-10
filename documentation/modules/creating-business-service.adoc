@@ -5,16 +5,16 @@
 [id='creating-business-service_{context}']
 = Creating a business service
 
-A business service is an attribute of an application. You can create a business service in the *Controls* page of the {project-name} web console.
+A business service is an attribute of an application. You can create a business service on the *Controls* page of the {project-name} web console.
 
 .Prerequisites
 
-* The *Controls* must contain the stakeholder who is the business service owner.
+* The *Stakeholders* tab on the *Controls* page must contain the business service owner.
 
 .Procedure
 
 . In the {project-name} web console, click *Controls*.
-. Click *Business services* and then click *Create new*.
+. Click the *Business services* tab and then click *Create new*.
 . Complete the following fields:
 
 * *Name*: Name of the business service.
@@ -23,4 +23,4 @@ A business service is an attribute of an application. You can create a business 
 
 . Click *Create*.
 +
-The new business service is displayed in the *Business services* tab of the *Controls* page.
+The new business service is displayed on the *Business services* tab.

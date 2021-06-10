@@ -5,7 +5,7 @@
 [id='creating-stakeholder_{context}']
 = Creating a stakeholder
 
-You can create a stakeholder in the *Controls* page of the {project-name} web console.
+You can create a stakeholder on the *Controls* page of the {project-name} web console.
 
 .Prerequisites
 
@@ -14,7 +14,7 @@ You can create a stakeholder in the *Controls* page of the {project-name} web co
 .Procedure
 
 . In the {project-name} web console, click *Controls*.
-. Click *Stakeholders* and then click *Create new*.
+. Click the *Stakeholders* tab and then click *Create new*.
 . Complete the following fields:
 
 * *Email*: Email address of the stakeholder.
@@ -24,6 +24,6 @@ You can create a stakeholder in the *Controls* page of the {project-name} web co
 
 . Click *Create*.
 +
-The new stakeholder is displayed in the *Stakeholders* tab of the *Controls* page.
+The new stakeholder is displayed on the *Stakeholders* tab.
 
 . Expand the stakeholder to view the stakeholder groups to which the stakeholder belongs.

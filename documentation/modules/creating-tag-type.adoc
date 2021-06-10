@@ -5,22 +5,22 @@
 [id='creating-tag-type_{context}']
 = Creating a tag type
 
-You can create a tag type in the *Controls* page of the {project-name} web console.
+You can create a tag type on the *Controls* page of the {project-name} web console.
 
-A tag type defines the display rank and color of one or more tags. Tags are applied to applications in order to create filters and groups of applications.
+A tag type is the parent of a group of related tags. The tag type defines the rank and background color of the tags on the *Application inventory* page.
 
 You must create a tag type before you can create a tag.
 
 .Procedure
 
 . In the {project-name} web console, click *Controls*.
-. Click *Tags* and then click *Create tag type*.
+. Click the *Tags* tab and then click *Create tag type*.
 . Complete the following fields:
 
 * *Name*: Name of the tag type.
-* *Rank*: Optional. The rank determines the order in which the tags are displayed in the details view of an application.
-* *Color*: Optional. You can select a display color.
+* *Rank*: The rank determines the order in which the tags are displayed.
+* *Color*: The color is displayed as the background color for all tags associated with this tag type.
 
 . Click *Create*.
 +
-The new tag type is displayed in the *Tags* tab of the *Controls* page.
+The new tag type is displayed on the *Tags* tab.

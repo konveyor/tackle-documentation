@@ -22,24 +22,24 @@ include::modules/installing-pathfinder.adoc[]
 include::modules/logging-in-to-pathfinder.adoc[leveloffset=+2]
 
 [id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
-== Managing the Controls
+== Managing controls
 
-The *Controls* page of the {project-name} web console enables you to manage the following:
+The *Controls* page of the {project-name} web console enables you to manage the following entities:
 
 Stakeholder::
-Individual with an interest in an application or a subject matter expert. Stakeholders are contributors to the application assessment process.
+A stakeholder is an individual with an interest in an application or a subject matter expert. Stakeholders are contributors to the application assessment process.
 
 Stakeholder group::
-Group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.
+A stakeholder group is a group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.
 
 Job function::
-Attribute of a stakeholder. You can define a new job function or use predefined job functions, for example, Business Analyst or Program Manager.
+A job function is an attribute of a stakeholder. You use a predefined job function or create a new job function.
 
 Business service::
-Attribute of an application, for example, credit card service, transportation, or IT support. A business service is owned by a stakeholder.
+A business service is an attribute of an application, for example, credit card service, transportation, or IT support. A business service is owned by a stakeholder.
 
 Tag::
-Attribute of an application. Tags are used for creating filters and searches. Each tag is associated with a _tag type_ that determines its display rank and color and enables you to group related tags.
+A tag is an attribute of an application. Tags are an extensible and flexible way to add metadata to applications. Tags are grouped under a parent tag type. You can use predefined tag types and tags or create new ones.
 
 include::modules/creating-stakeholder.adoc[leveloffset=+2]
 include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
@@ -56,7 +56,7 @@ You can create, import, tag, and modify your applications in the *Application in
 include::modules/creating-application.adoc[leveloffset=+2]
 include::modules/importing-applications.adoc[leveloffset=+2]
 include::modules/managing-imports.adoc[leveloffset=+2]
-include::modules/tagging-applications.adoc[leveloffset=+2]
+include::modules/tagging-application.adoc[leveloffset=+2]
 include::modules/adding-business-service-to-applications.adoc[leveloffset=+2]
 include::modules/managing-application-dependencies.adoc[leveloffset=+2]
 
