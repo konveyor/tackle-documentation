@@ -3,22 +3,18 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id='adding-business-service-to-applications_{context}']
-= Adding a business service to applications
+= Adding a business service to an application
 
-You can add a business service to one or more applications in the *Application inventory* page of the {project-name} web console.
+You can add a business service to an application on the *Application inventory* page of the {project-name} web console.
 
 .Prerequisites
 
-* The *Application Inventory* must contain at least one application.
-* The *Controls* must contain a business service.
+* You must create the business service on the *Business service* tab on the *Controls* page.
 
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
-. Select one or more applications.
-. Click the {kebab} in the toolbar and select *Add business service*.
-. Select a business service and then click *Add*.
-
-. Expand an application to its details.
+. Click the Edit icon beside an application.
+. Select a business service and click *Save*.
 +
-The business service is displayed.
+The business service is displayed in the *Business service* column of the application.

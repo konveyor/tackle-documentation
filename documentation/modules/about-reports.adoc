@@ -5,7 +5,7 @@
 [id='about-reports_{context}']
 = About reports
 
-You can view a report of the assessments and reviews in the *Reports* page of the {project-name} web console.
+You can view a report of the assessments and reviews on the *Reports* page of the {project-name} web console.
 
 The *Reports* page contains the following sections:
 

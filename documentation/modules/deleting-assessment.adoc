@@ -5,7 +5,7 @@
 [id="deleting-assessment_{context}"]
 = Deleting an assessment
 
-You can delete an application assessment in the *Application inventory* page of the {project-name} web console. Deleting an assessment deletes its review.
+You can delete an application assessment on the *Application inventory* page of the {project-name} web console. Deleting an assessment deletes its review.
 
 .Procedure
 

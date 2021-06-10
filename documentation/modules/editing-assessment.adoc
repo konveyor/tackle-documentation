@@ -5,7 +5,7 @@
 [id="editing-assessment_{context}"]
 = Editing an assessment
 
-You can edit an application assessment in the *Application inventory* page of the {project-name} web console.
+You can edit an application assessment on the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 

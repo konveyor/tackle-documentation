@@ -5,7 +5,7 @@
 [id='managing-application-dependencies_{context}']
 = Managing application dependencies
 
-You can add, delete, and view application dependencies in the *Application inventory* page of the {project-name} web console.
+You can add, delete, and view application dependencies on the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 

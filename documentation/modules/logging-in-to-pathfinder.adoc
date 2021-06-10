@@ -15,7 +15,7 @@ You can log in to the {project-name} web console.
 
 . Log in to the {ocp} web console.
 . Click *Networking* -> *Routes*.
-. Select the +{project-name}+ project in the *Project:* list.
+. Select the +{project-name}+ project on the *Project:* list.
 . Click the URL for the `tackle-ui` service to open the login page for the {project-name} web console.
 . Enter your *Username* and *Password* and click *Log in*.
 +

@@ -5,12 +5,12 @@
 [id='creating-job-function_{context}']
 = Creating a job function
 
-A job function is an attribute of a stakeholder. You can use a predefined job function or create a new job function in the *Controls* page of the {project-name} web console.
+A job function is an attribute of a stakeholder. You can use a predefined job function or create a new job function on the *Controls* page of the {project-name} web console.
 
 .Procedure
 
 . In the {project-name} web console, click *Controls*.
-. Click *Job functions* and then click *Create new*.
+. Click the *Job functions* tab and then click *Create new*.
 . Enter the *Name* of the job function and click *Create*.
 +
-The new job function is displayed in the *Job functions* tab of the *Controls* page.
+The new job function is displayed on the *Job functions* tab.

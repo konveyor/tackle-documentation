@@ -22,4 +22,4 @@ Application inventory::
 The *Application inventory* enables you to manage your application portfolio and to group applications for assessment.
 
 Reports::
-The *Reports* page displays the results of the application assessments and the assessment reviews in the *Application inventory*.
+The *Reports* page displays the results of the application assessments and the assessment reviews on the *Application inventory*.

@@ -2,18 +2,16 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='tagging-applications_{context}']
-= Tagging applications
+[id='tagging-application_{context}']
+= Tagging an application
 
-You can tag one or more applications in the *Application inventory* page of the {project-name} web console.
+You can tag an application on the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
-. Select one or more applications.
-. Click the {kebab} in the toolbar and select *Add tag*.
-. Select one or more tags and then click *Apply tags*.
-
-. Expand an application to view its details.
+. Click the Edit icon beside an application.
+. Select one or more tags and click *Save*.
+. Expand the application.
 +
-The display order of the tags is determined by the *Rank* of the tag type.
+The added tags are displayed.
