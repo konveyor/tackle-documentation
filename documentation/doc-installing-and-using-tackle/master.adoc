@@ -43,6 +43,7 @@ Attribute of an application. Tags are used for creating filters and searches. Ea
 
 include::modules/creating-stakeholder.adoc[leveloffset=+2]
 include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
+include::modules/creating-job-function.adoc[leveloffset=+2]
 include::modules/creating-business-service.adoc[leveloffset=+2]
 include::modules/creating-tag-type.adoc[leveloffset=+2]
 include::modules/creating-tag.adoc[leveloffset=+2]
