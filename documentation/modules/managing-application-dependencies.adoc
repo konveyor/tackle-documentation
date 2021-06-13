@@ -5,17 +5,12 @@
 [id='managing-application-dependencies_{context}']
 = Managing application dependencies
 
-You can add, delete, and view application dependencies on the *Application inventory* page of the {project-name} web console.
+You can add, delete, and view application dependencies in the *Manage dependencies* window on the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
 . Click the {kebab} beside an application and select *Manage dependencies*.
-. Select applications in the northbound or southbound dependencies fields.
-+
-[NOTE]
-====
-To remove dependencies, delete the applications in the dependencies fields.
-====
-
-. Click *Close*.
+. To add dependencies, select applications in the northbound or southbound dependencies fields.
+. To remove dependencies, delete selected applications.
+. Click *Close* to save and close.

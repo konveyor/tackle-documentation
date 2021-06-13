@@ -3,9 +3,9 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id='tagging-application_{context}']
-= Tagging an application
+= Adding a tag to an application
 
-You can tag an application on the *Application inventory* page of the {project-name} web console.
+You can add a tag to an application on the *Application inventory* page of the {project-name} web console.
 
 .Procedure
 
