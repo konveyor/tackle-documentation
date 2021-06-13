@@ -24,22 +24,7 @@ include::modules/logging-in-to-pathfinder.adoc[leveloffset=+2]
 [id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
 == Managing controls
 
-The *Controls* page of the {project-name} web console enables you to manage the following entities:
-
-Stakeholder::
-A stakeholder is an individual with an interest in an application or a subject matter expert. Stakeholders are contributors to the application assessment process.
-
-Stakeholder group::
-A stakeholder group is a group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.
-
-Job function::
-A job function is an attribute of a stakeholder. You use a predefined job function or create a new job function.
-
-Business service::
-A business service is an attribute of an application, for example, credit card service, transportation, or IT support. A business service is owned by a stakeholder.
-
-Tag::
-A tag is an attribute of an application. Tags are an extensible and flexible way to add metadata to applications. Tags are grouped under a parent tag type. You can use predefined tag types and tags or create new ones.
+The *Controls* page of the {project-name} web console enables you to manage stakeholders, stakeholder groups, job functions, business services, and tags.
 
 include::modules/creating-stakeholder.adoc[leveloffset=+2]
 include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
@@ -56,7 +41,7 @@ You can create, import, tag, and modify your applications in the *Application in
 include::modules/creating-application.adoc[leveloffset=+2]
 include::modules/importing-applications.adoc[leveloffset=+2]
 include::modules/managing-imports.adoc[leveloffset=+2]
-include::modules/tagging-application.adoc[leveloffset=+2]
+include::modules/tagging-applications.adoc[leveloffset=+2]
 include::modules/adding-business-service-to-applications.adoc[leveloffset=+2]
 include::modules/managing-application-dependencies.adoc[leveloffset=+2]
 

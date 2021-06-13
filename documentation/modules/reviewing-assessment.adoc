@@ -10,8 +10,8 @@ You can review an application assessment on the *Application inventory* page of 
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
-. Select an application that has been assessed and click the *Review* button in the toolbar.
-. Review the application assessment in the *Assessment summary* section on the *Review* page.
+. Select one or more applications that have been assessed but not reviewed and click the *Review* button in the toolbar.
+. Review the assessment in the *Assessment summary* section on the *Review* page.
 +
 The *Assessment summary* table contains a *Risk* column that indicates the severity of the risk associated with each response.
 
@@ -20,6 +20,6 @@ The *Assessment summary* table contains a *Risk* column that indicates the sever
 . Optional. Enter comments on the *Comments* field.
 . Click *Submit review*.
 +
-The *Review* status of the application is *Completed*.
+The *Review* status of each application is *Completed*.
 
 . Expand the application to view the review results.
