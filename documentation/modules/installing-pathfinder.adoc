@@ -3,16 +3,21 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id="installing-pathfinder_{context}"]
-== Installing {project-name}
+= Installing {project-name}
 
-*Needs verification*
+A cluster administrator can install the Tackle Operator on {ocp} 4.7 and later versions.
 
-You can install the {project-name} on {ocp} 4.7 and later versions with the {project-name} Operator.
+After the Tackle Operator is installed, a developer can install the {project-name} application in a project.
 
 [NOTE]
 ====
-The {project-name} Operator is a Community Operator. Red Hat provides no support for Community Operators.
+The Tackle Operator is a Community Operator. Red Hat provides no support for Community Operators.
 ====
+
+[id="installing-operator_{context}"]
+== Installing the Tackle Operator
+
+You can install the Tackle Operator by using the OpenShift web console.
 
 .Prerequisites
 
@@ -20,10 +25,31 @@ The {project-name} Operator is a Community Operator. Red Hat provides no support
 
 .Procedure
 
-. Log in to the OpenShift web console.
-. Click *Operators* -> *OperatorHub*.
-. Use the *Search by keyword* field to locate the *{project-name}* Operator.
+. In the OpenShift web console, click *Operators* -> *OperatorHub*.
+. Click the *Modernization & Migration* category and then click the Tackle Operator.
 . Click *Install*.
 . Select a project from the *Installed Namespace* list and click *Install*.
-. Click *Operators* -> *Installed Operators* to verify that the Operator is installed.
-. Click *Workloads* -> *Pods* to verify that the {project-name} pods are running.
+. After the Tackle Operator is installed, click *View Operator* to view the Operator details.
+
+[id="installing-application_{context}"]
+== Installing the {project-name} application
+
+You can install the {project-name} application by using the OpenShift web console.
+
+After you have installed the application, you can log in to the {project-name} web console.
+
+.Prerequisites
+
+* You must have `project-admin-user` privileges.
+* You must create a project for {project-name}.
+
+.Procedure
+
+. In the OpenShift web console, switch to the *Developer* perspective and click *+Add*.
+. In the *Add* view, click *Operator Backed*.
+. Click the *Tackle by Konveyor* tile.
+. Click *Create*.
+. Review the application settings and click *Create*.
+. Click *Topology*.
+. Click the *OpenURL* icon of the `tackle-ui` pod to open the {project-name} application in a new browser window.
+. Enter your *Username or email* and *Password* and then click *Log in* to access the {project-name} web console.

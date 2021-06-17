@@ -37,6 +37,7 @@ asciidoctor:
   - imagesdir=../modules/images
   - project-name=Tackle
   - ocp=Enterprise Kubernetes Platform
+  - ocp-version=4.7
   - project-version=1.0
   - kebab=Options menu image:kebab.png[title="Options menu",height=20]
   safe: unsafe

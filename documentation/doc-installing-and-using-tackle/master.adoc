@@ -19,8 +19,6 @@ endif::[]
 include::modules/about-pathfinder.adoc[]
 include::modules/installing-pathfinder.adoc[]
 
-include::modules/logging-in-to-pathfinder.adoc[leveloffset=+2]
-
 [id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
 == Managing controls
 
