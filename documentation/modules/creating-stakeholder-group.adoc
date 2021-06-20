@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-stakeholder-group_{context}']
+[id="creating-stakeholder-group_{context}"]
 = Creating a stakeholder group
 
 You can create stakeholder groups on the *Controls* page of the {project-name} web console. Stakeholder groups enable you to assign multiple stakeholders to review an assessment.

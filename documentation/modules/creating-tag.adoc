@@ -2,16 +2,14 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-tag_{context}']
+[id="creating-tag_{context}"]
 = Creating a tag
 
 You can create a tag on the *Controls* page of the {project-name} web console.
 
-Tags are an extensible and flexible way to add metadata to applications. Tags are added to applications on the *Application inventory* page. Tags are grouped by a parent tag type.
+Tags are an extensible and flexible way to add metadata to applications. Tags are added to applications on the *Application inventory* page.
 
-.Prerequisites
-
-* You must create a tag type for the new tag.
+Tags belong to a parent tag type that determines the display order and color of the tags. You can use a predefined tag type or create a new tag type.
 
 .Procedure
 

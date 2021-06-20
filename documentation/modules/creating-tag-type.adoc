@@ -2,14 +2,12 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-tag-type_{context}']
+[id="creating-tag-type_{context}"]
 = Creating a tag type
 
 You can create a tag type on the *Controls* page of the {project-name} web console.
 
 A tag type is the parent of a group of related tags. The tag type defines the rank and background color of the tags on the *Application inventory* page.
-
-You must create a tag type before you can create a tag.
 
 .Procedure
 

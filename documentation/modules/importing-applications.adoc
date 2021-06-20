@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='importing-applications_{context}']
+[id="importing-applications_{context}"]
 = Importing applications
 
 You can import one or more applications into the *Application inventory* page of the {project-name} web console by using a CSV file.

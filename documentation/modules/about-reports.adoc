@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='about-reports_{context}']
+[id="about-reports_{context}"]
 = About reports
 
 You can view a report of the assessments and reviews on the *Reports* page of the {project-name} web console.

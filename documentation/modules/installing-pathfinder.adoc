@@ -5,6 +5,11 @@
 [id="installing-pathfinder_{context}"]
 = Installing {project-name}
 
+ifeval::["{build}" == "upstream"]
+You can install the Tackle Operator and then install the {project-name} application.
+endif::[]
+
+ifeval::["{build}" == "downstream"]
 A cluster administrator can install the Tackle Operator on {ocp} 4.7 and later versions.
 
 After the Tackle Operator is installed, a developer can install the {project-name} application in a project.
@@ -13,10 +18,22 @@ After the Tackle Operator is installed, a developer can install the {project-nam
 ====
 The Tackle Operator is a Community Operator. Red Hat provides no support for Community Operators.
 ====
+endif::[]
 
 [id="installing-operator_{context}"]
 == Installing the Tackle Operator
 
+ifeval::["{build}" == "upstream"]
+You can install the Tackle Operator by following the procedure on link:https://operatorhub.io[operatorhub.io].
+
+.Procedure
+
+. Navigate to link:https://operatorhub.io[operatorhub.io].
+. Enter `Tackle` in the Search field to locate the Tackle Operator.
+. Click the *Tackle Operator* tile and then click *Install*.
+. Follow the installation procedure to install the Tackle Operator.
+endif::[]
+ifeval::["{build}" == "downstream"]
 You can install the Tackle Operator by using the OpenShift web console.
 
 .Prerequisites
@@ -30,10 +47,15 @@ You can install the Tackle Operator by using the OpenShift web console.
 . Click *Install*.
 . Select a project from the *Installed Namespace* list and click *Install*.
 . After the Tackle Operator is installed, click *View Operator* to view the Operator details.
+endif::[]
 
 [id="installing-application_{context}"]
 == Installing the {project-name} application
 
+ifeval::["{build}" == "upstream"]
+TBD
+endif::[]
+ifeval::["{build}" == "downstream"]
 You can install the {project-name} application by using the OpenShift web console.
 
 After you have installed the application, you can log in to the {project-name} web console.
@@ -53,3 +75,4 @@ After you have installed the application, you can log in to the {project-name} w
 . Click *Topology*.
 . Click the *OpenURL* icon of the `tackle-ui` pod to open the {project-name} application in a new browser window.
 . Enter your *Username or email* and *Password* and then click *Log in* to access the {project-name} web console.
+endif::[]

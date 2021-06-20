@@ -30,16 +30,16 @@ asciidoctor:
   - title=Installing and using Tackle
   - context=tackle
   - description=Refactoring applications for Kubernetes
-  - abstract=Tackle enables you to assess your applications for their suitability for replatforming on Kubernetes.
   - author=Tackle documentation team
   - showtitle=@
   - build=upstream
   - imagesdir=../modules/images
   - project-name=Tackle
   - ocp=Enterprise Kubernetes Platform
-  - ocp-version=4.7
+  - ocp-version=
   - project-version=1.0
   - kebab=Options menu image:kebab.png[title="Options menu",height=20]
+  - abstract={project-name} is a cloud-native application that assesses your applications to determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring. {project-name} also helps you plan the migration of your applications to an enterprise Kubernetes platform.
   safe: unsafe
 
 exclude:

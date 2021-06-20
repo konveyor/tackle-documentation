@@ -3,24 +3,35 @@
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
 [id="about-pathfinder_{context}"]
-== About {project-name}
+= About {project-name}
 
-{project-name} is a cloud-native application that assesses your applications to gauge whether the applications are suitable for rehosting, replatforming, or refactoring for {ocp}.
+ifeval::["{build}" == "downstream"]
+{project-name} is a cloud-native application that assesses your applications to determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring. {project-name} also helps you to plan the migration of your applications to {ocp}.
+endif::[]
+ifeval::["{build}" == "upstream"]
+{project-name} is a cloud-native application that assesses your applications to determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring. {project-name} also helps you to plan the migration of your applications to an enterprise Kubernetes platform.
+endif::[]
 
 {project-name} uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders to gather information about applications, to discuss risks flagged by {project-name}, and to reach a consensus in formulating recommendations for each application.
 
 {project-name} provides the following services in a web console:
 
-Application inventory::
+[id="application-inventory_{context}"]
+== Application inventory
+
 The *Application inventory* page enables you to perform the following tasks:
+
 * Manage your application portfolio.
 * Define and manage application dependencies.
 * Link applications to the business services that they support.
 * Describe and categorize applications by using tags.
 * Group applications for assessment and analysis.
 
-Assessments::
+[id="assessments_{context}"]
+== Assessments
+
 The *Assess* and *Review* buttons on the *Application inventory* page enable you to perform the following tasks:
+
 * Assess the suitability of your applications for deployment in containers.
 +
 The assessment is an interactive questionnaire that gathers information and identifies possible risks and their severity.
@@ -31,14 +42,20 @@ The assessment is an interactive questionnaire that gathers information and iden
 ** *Business criticality*: How critical the application is to your business.
 ** *Work priority*: The work priority estimated for the proposed action.
 
-Reports::
+[id="reports_{context}"]
+== Reports
+
 The *Reports* page displays the results of the application assessments and reviews. The reports provide information about the following:
+
 * Suitability of applications for containerization.
 * Possible risks and severity.
 * Adoption plan based on estimated effort, work priority, and application dependencies.
 
-Controls::
+[id="controls_{context}"]
+== Controls
+
 The *Controls* page enables you to manage the following entities:
+
 * *Stakeholder*: A stakeholder is an individual with an interest in an application or a subject matter expert. Stakeholders are contributors to the application assessment process.
 * *Stakeholder group*: A stakeholder group is a group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.
 * *Job function*: A job function is an attribute of a stakeholder. You use a predefined job function or create a new job function.

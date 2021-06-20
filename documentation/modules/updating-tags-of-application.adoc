@@ -1,0 +1,15 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="updating-tags-of-application_{context}"]
+= Updating the tags assigned to an application
+
+You can add or remove tags assigned to an application on the *Application inventory* page of the {project-name} web console.
+
+.Procedure
+
+. In the {project-name} web console, click *Application inventory*.
+. Click the Edit icon beside an application.
+. Add or delete tags and click *Save*.
+. Expand the application to view the updated tags.

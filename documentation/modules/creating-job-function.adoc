@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-job-function_{context}']
+[id="creating-job-function_{context}"]
 = Creating a job function
 
 A job function is an attribute of a stakeholder. You can use a predefined job function or create a new job function on the *Controls* page of the {project-name} web console.
