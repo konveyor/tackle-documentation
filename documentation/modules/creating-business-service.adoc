@@ -2,14 +2,10 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-business-service_{context}']
+[id="creating-business-service_{context}"]
 = Creating a business service
 
 A business service is an attribute of an application. You can create a business service on the *Controls* page of the {project-name} web console.
-
-.Prerequisites
-
-* The *Stakeholders* tab on the *Controls* page must contain the business service owner.
 
 .Procedure
 
@@ -18,8 +14,8 @@ A business service is an attribute of an application. You can create a business 
 . Complete the following fields:
 
 * *Name*: Name of the business service.
-* *Description*: Optional. Description of the business service.
-* *Owner*: Select a stakeholder.
+* *Description*: Optional: Description of the business service.
+* *Owner*: Optional: Select a stakeholder.
 
 . Click *Create*.
 +

@@ -4,7 +4,7 @@
 
 This repository contains the files for Tackle documentation. Tackle is part of the [Konveyor project](https://www.konveyor.io/).
 
-[Tackle](https://github.com/konveyor/tackle) is a collection of tools that support the modernization and migration of applications to Kubernetes. The tools are microservices, which are accessible from a common  [Tackle UI](https://github.com/konveyor/tackle-ui/).  
+[Tackle](https://github.com/konveyor/tackle) is a collection of tools that support the modernization and migration of applications to Kubernetes. The tools are microservices, which are accessible from a common [Tackle UI](https://github.com/konveyor/tackle-ui/).  
 
 * [Tackle Application Inventory](https://github.com/konveyor/tackle-application-inventory) allows users to maintain their portfolio of applications, to link them to the business services that they support, and to define their interdependencies. The Application Inventory uses an extensible tagging model to add metadata. The Application Inventory is used to select an application for an assessment by Pathfinder.
 
@@ -13,6 +13,10 @@ This repository contains the files for Tackle documentation. Tackle is part of t
 * [Tackle Controls](https://github.com/konveyor/tackle-controls) are a collection of entities that add value to Application Inventory and the Pathfinder assessment. They comprise business services, stakeholders, stakeholder groups, job functions, tag types, and tags.  
 
 * [Tackle DiVA](https://github.com/konveyor/tackle-diva) is a data-centric application analysis tool. It imports a set of target application source files and provides database/transaction analysis results.
+
+## Submitting issues
+
+Can submit issues at [konveyor/tackle-operator/issues](https://github.com/konveyor/tackle-operator/issues).
 
 ## Contributing to Tackle documentation
 

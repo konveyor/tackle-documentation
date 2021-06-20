@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-application_{context}']
+[id="creating-application_{context}"]
 = Creating an application
 
 You can create an application on the *Application inventory* page of the {project-name} web console.
@@ -21,3 +21,5 @@ You can create an application on the *Application inventory* page of the {projec
 . Click *Create*.
 +
 The new application is displayed on the *Application inventory* page.
+
+. Expand the application to view its tags and comments.

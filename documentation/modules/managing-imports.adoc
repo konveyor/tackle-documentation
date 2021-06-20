@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='managing-imports_{context}']
+[id="managing-imports_{context}"]
 = Managing application imports
 
 You can manage application imports on the *Application import* page of the {project-name} web console.

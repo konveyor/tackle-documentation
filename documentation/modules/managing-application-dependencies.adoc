@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='managing-application-dependencies_{context}']
+[id="managing-application-dependencies_{context}"]
 = Managing application dependencies
 
 You can add, delete, and view application dependencies in the *Manage dependencies* window on the *Application inventory* page of the {project-name} web console.
@@ -12,5 +12,5 @@ You can add, delete, and view application dependencies in the *Manage dependenci
 . In the {project-name} web console, click *Application inventory*.
 . Click the {kebab} beside an application and select *Manage dependencies*.
 . To add dependencies, select applications in the northbound or southbound dependencies fields.
-. To remove dependencies, delete selected applications.
+. To remove dependencies, delete selected applications in the northbound or southbound dependencies fields.
 . Click *Close* to save and close.

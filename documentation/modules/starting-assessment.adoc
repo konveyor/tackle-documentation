@@ -10,7 +10,7 @@ You can start an application assessment on the *Application inventory* page of t
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
-. Select one or more applications that have not been assessed and click the *Assess* button in the toolbar.
+. Select an application that has not been assessed and click the *Assess* button in the toolbar.
 . Select individual stakeholders or stakeholder groups and then click *Next*.
 . Select responses to questions on each page of the *Application assessment* wizard and then click *Next*.
 +

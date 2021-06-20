@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id='creating-stakeholder_{context}']
+[id="creating-stakeholder_{context}"]
 = Creating a stakeholder
 
 You can create a stakeholder on the *Controls* page of the {project-name} web console.
