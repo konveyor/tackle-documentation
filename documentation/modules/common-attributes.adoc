@@ -8,6 +8,7 @@
 :namespace:
 :ocp: OpenShift Container Platform
 :ocp-version: 4.7
+:operator: Tackle Operator
 
 // metadata attributes
 :icons: font
