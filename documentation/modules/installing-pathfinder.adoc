@@ -6,17 +6,17 @@
 = Installing {project-name}
 
 ifeval::["{build}" == "upstream"]
-You can install the Tackle Operator and then install the {project-name} application.
+You can install the {operator} and then install the {project-name} application.
 endif::[]
 
 ifeval::["{build}" == "downstream"]
-A cluster administrator can install the Tackle Operator on {ocp} 4.7 and later versions.
+A cluster administrator can install the {operator} on {ocp} 4.7 and later versions.
 
-After the Tackle Operator is installed, a developer can install the {project-name} application in a project.
+After the {operator} is installed, a developer can install the {project-name} application in a project.
 
 [NOTE]
 ====
-The Tackle Operator is a Community Operator. Red Hat provides no support for Community Operators.
+The {operator} is a Community Operator. Red Hat provides no support for Community Operators.
 ====
 endif::[]
 
@@ -24,17 +24,17 @@ endif::[]
 == Installing the Tackle Operator
 
 ifeval::["{build}" == "upstream"]
-You can install the Tackle Operator by following the procedure on link:https://operatorhub.io[operatorhub.io].
+You can install the {operator} by following the procedure on link:https://operatorhub.io[operatorhub.io].
 
 .Procedure
 
 . Navigate to link:https://operatorhub.io[operatorhub.io].
-. Enter `Tackle` in the Search field to locate the Tackle Operator.
-. Click the *Tackle Operator* tile and then click *Install*.
-. Follow the installation procedure to install the Tackle Operator.
+. Enter `Tackle` in the Search field to locate the {operator}.
+. Click the *{operator}* tile and then click *Install*.
+. Follow the installation procedure to install the {operator}.
 endif::[]
 ifeval::["{build}" == "downstream"]
-You can install the Tackle Operator by using the OpenShift web console.
+You can install the {operator} by using the OpenShift web console.
 
 .Prerequisites
 
@@ -43,10 +43,10 @@ You can install the Tackle Operator by using the OpenShift web console.
 .Procedure
 
 . In the OpenShift web console, click *Operators* -> *OperatorHub*.
-. Click the *Modernization & Migration* category and then click the Tackle Operator.
+. Click the *Modernization & Migration* category and then click the *{operator}* tile.
 . Click *Install*.
 . Select a project from the *Installed Namespace* list and click *Install*.
-. After the Tackle Operator is installed, click *View Operator* to view the Operator details.
+. After the {operator} is installed, click *View Operator* to verify the installation.
 endif::[]
 
 [id="installing-application_{context}"]
@@ -62,6 +62,7 @@ After you have installed the application, you can log in to the {project-name} w
 
 .Prerequisites
 
+* The {operator} must be installed on the cluster.
 * You must have `project-admin-user` privileges.
 * You must create a project for {project-name}.
 

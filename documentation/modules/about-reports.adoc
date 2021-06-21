@@ -16,7 +16,6 @@ Adoption candidate distribution::
 This section lists the assessed applications with the following columns:
 * *Criticality* is based on the *Business criticality* value of the review.
 * *Priority* is based on the *Work priority* value of the review.
-* *Confidence* is based on the severity of the identified risks.
 * *Effort* is based on the *Effort estimate* value of the review.
 * *Decision* is based on the *Proposed action* value of the review.
 +
@@ -26,4 +25,4 @@ Suggested adoption plan::
 This section displays a suggested adoption plan based on effort, priority, and dependencies.
 
 Identified risks::
-This section lists the risks identified in the assessments for all applications.
+This section lists the severe risks identified in the assessments for all applications.

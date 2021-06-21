@@ -25,10 +25,9 @@ The *Application inventory* page enables you to perform the following tasks:
 * Define and manage application dependencies.
 * Link applications to the business services that they support.
 * Describe and categorize applications by using tags.
-* Group applications for assessment and analysis.
 
 [id="assessments_{context}"]
-== Assessments
+== Assessments and reviews
 
 The *Assess* and *Review* buttons on the *Application inventory* page enable you to perform the following tasks:
 
