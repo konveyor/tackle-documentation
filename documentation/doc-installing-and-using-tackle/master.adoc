@@ -19,18 +19,6 @@ endif::[]
 include::modules/about-pathfinder.adoc[leveloffset=+1]
 include::modules/installing-pathfinder.adoc[leveloffset=+1]
 
-[id="managing-stakeholders-job-functions-business-services-and-tags_{context}"]
-== Managing controls
-
-The *Controls* page of the {project-name} web console enables you to manage stakeholders, stakeholder groups, job functions, business services, and tags.
-
-include::modules/creating-stakeholder.adoc[leveloffset=+2]
-include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
-include::modules/creating-job-function.adoc[leveloffset=+2]
-include::modules/creating-business-service.adoc[leveloffset=+2]
-include::modules/creating-tag-type.adoc[leveloffset=+2]
-include::modules/creating-tag.adoc[leveloffset=+2]
-
 [id="managing-applications_{context}"]
 == Managing applications
 
@@ -52,5 +40,17 @@ include::modules/starting-assessment.adoc[leveloffset=+2]
 include::modules/editing-assessment.adoc[leveloffset=+2]
 include::modules/reviewing-assessment.adoc[leveloffset=+2]
 include::modules/deleting-assessment.adoc[leveloffset=+2]
+
+[id="managing-controls_{context}"]
+== Managing controls
+
+The *Controls* page of the {project-name} web console enables you to manage stakeholders, stakeholder groups, job functions, business services, and tags.
+
+include::modules/creating-stakeholder.adoc[leveloffset=+2]
+include::modules/creating-stakeholder-group.adoc[leveloffset=+2]
+include::modules/creating-job-function.adoc[leveloffset=+2]
+include::modules/creating-business-service.adoc[leveloffset=+2]
+include::modules/creating-tag-type.adoc[leveloffset=+2]
+include::modules/creating-tag.adoc[leveloffset=+2]
 
 include::modules/about-reports.adoc[leveloffset=+1]
