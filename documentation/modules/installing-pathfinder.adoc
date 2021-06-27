@@ -20,6 +20,7 @@ You install the {operator} by using the OpenShift web console.
 
 .Prerequisites
 
+* You must have {ocp} 4.7 or later installed.
 * You must have `cluster-admin` privileges.
 
 .Procedure
