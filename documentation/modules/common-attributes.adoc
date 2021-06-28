@@ -18,4 +18,4 @@
 :build: downstream
 :abstract: Migration Toolkit for Applications (MTA) Pathfinder is a cloud-native application that assesses your applications to determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring. {project-name} also helps you plan the migration of your applications to {ocp}.
 :title: Installing and using {project-name}
-:subtitle:
+:subtitle: Assess your applications to determine an appropriate migration strategy and to plan your migration to {ocp}.
