@@ -8,4 +8,4 @@ Tackle is a tool in the link:https://konveyor.io/[Konveyor community] for refact
 
 ## Documentation
 
-* link:documentation/doc-installing-and-using-tackle/master/index.html[Installing and using Tackle] (1.0 draft). GA: June 30, 2021.
+* link:documentation/doc-installing-and-using-tackle/master/index.html[Installing and using Tackle] (1.0). June 30, 2021.
