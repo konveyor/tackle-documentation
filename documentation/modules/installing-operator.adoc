@@ -1,0 +1,42 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="installing-operator_{context}"]
+= Installing the {operator}
+
+ifeval::["{build}" == "downstream"]
+[NOTE]
+====
+The {operator} is a Community Operator. Red Hat provides no support for Community Operators.
+====
+
+Install the {operator} by using the OpenShift web console.
+
+.Prerequisites
+
+* You must have {ocp} 4 installed.
+* You must have `cluster-admin` privileges.
+
+.Procedure
+
+. In the OpenShift Container Platform web console, click *Operators* -> *OperatorHub*.
+. Click the *Modernization & Migration* category and then click the *{operator}* tile.
+. Click *Install*.
+. Select a project from the *Installed Namespace* list and click *Install*.
+. After the {operator} is installed, click *View Operator* to verify the installation.
+endif::[]
+ifeval::["{build}" == "upstream"]
+Download and install the {operator} from link:https://operatorhub.io[operatorhub.io].
+
+.Prerequisites
+
+* You must have `admin` privileges to install the {operator}.
+
+.Procedure
+
+. Navigate to link:https://operatorhub.io[operatorhub.io].
+. Click the *Modernization & Migration* category.
+. Click the *{operator}* tile and then click *Install*.
+. Follow the installation instructions.
+endif::[]

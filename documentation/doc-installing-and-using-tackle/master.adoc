@@ -17,7 +17,14 @@ include::modules/making-open-source-more-inclusive.adoc[]
 endif::[]
 
 include::modules/about-pathfinder.adoc[leveloffset=+1]
-include::modules/installing-pathfinder.adoc[leveloffset=+1]
+
+[id="installing-pathfinder_{context}"]
+== Installing {project-name}
+
+include::modules/installing-operator.adoc[leveloffset=+2]
+include::modules/installing-application.adoc[leveloffset=+2]
+include::modules/accessing-console.adoc[leveloffset=+2]
+include::modules/console-services.adoc[leveloffset=+2]
 
 [id="managing-applications_{context}"]
 == Managing applications

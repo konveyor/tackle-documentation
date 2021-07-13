@@ -1,0 +1,25 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="accessing-console_{context}"]
+= Logging in to the {project-name} web console
+
+You can log in to the {project-name} web console.
+
+.Prerequisites
+
+* The {project-name} application must be installed.
+* You must have the route of the `tackle-ui` pod. This is the {project-name} web console URL.
+
+.Procedure
+
+. In a browser, navigate to the {project-name} web console.
+. Enter `tackle` in the *Username or email* field, `password` in the *Password* field, and then click *Log in* to access the {project-name} web console.
++
+You can review the services of the {project-name} web console.
+
+[IMPORTANT]
+====
+You must change the default password of the tackle user.
+====
