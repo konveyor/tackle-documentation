@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Installing and using Tackle | Tackle Documentation</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Installing and using Tackle" />
+<meta name="author" content="Tackle documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tackle documentation" />
+<meta property="og:description" content="Tackle documentation" />
+<meta property="og:site_name" content="Tackle Documentation" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Installing and using Tackle" />
+<script type="application/ld+json">
+{"url":"/documentation/doc-installing-and-using-tackle/master/","author":{"@type":"Person","name":"Tackle documentation team"},"description":"Tackle documentation","@type":"WebPage","headline":"Installing and using Tackle","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/konveyor-logo-tackle.svg"},"name":"Tackle documentation team"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=49b9bee3c622e0314038e6a6258d4a8ddb6963f2">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/"><img src="/assets/img/konveyor-logo-tackle.svg" alt="Tackle Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/tackle-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1>Installing and using Tackle</h1>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#about-pathfinder_tackle">About Tackle</a></li>
+<li><a href="#installing-pathfinder_tackle">Installing Tackle</a>
+<ul class="sectlevel2">
+<li><a href="#installing-operator_tackle">Installing the Tackle Operator</a></li>
+<li><a href="#installing-application_tackle">Installing the Tackle application</a></li>
+<li><a href="#accessing-console_tackle">Logging in to the Tackle web console</a></li>
+<li><a href="#console services_tackle">Tackle web console services</a>
+<ul class="sectlevel3">
+<li><a href="#application-inventory_tackle">Application inventory</a></li>
+<li><a href="#assessments_tackle">Assessments</a></li>
+<li><a href="#reviews_tackle">Reviews</a></li>
+<li><a href="#reports_tackle">Reports</a></li>
+<li><a href="#controls_tackle">Controls</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#managing-applications_tackle">Managing applications</a>
+<ul class="sectlevel2">
+<li><a href="#creating-application_tackle">Creating an application</a></li>
+<li><a href="#importing-applications_tackle">Importing applications</a></li>
+<li><a href="#managing-imports_tackle">Managing application imports</a></li>
+<li><a href="#updating-tags-of-application_tackle">Updating the tags assigned to an application</a></li>
+<li><a href="#updating-business-service-of-application_tackle">Updating the business service assigned to an application</a></li>
+<li><a href="#managing-application-dependencies_tackle">Managing application dependencies</a></li>
+</ul>
+</li>
+<li><a href="#managing-assessments_tackle">Managing assessments</a>
+<ul class="sectlevel2">
+<li><a href="#starting-assessment_tackle">Starting an assessment</a></li>
+<li><a href="#editing-assessment_tackle">Editing an assessment</a></li>
+<li><a href="#reviewing-assessment_tackle">Reviewing an assessment</a></li>
+<li><a href="#deleting-assessment_tackle">Deleting an assessment</a></li>
+</ul>
+</li>
+<li><a href="#managing-controls_tackle">Managing controls</a>
+<ul class="sectlevel2">
+<li><a href="#creating-stakeholder_tackle">Creating a stakeholder</a></li>
+<li><a href="#creating-stakeholder-group_tackle">Creating a stakeholder group</a></li>
+<li><a href="#creating-job-function_tackle">Creating a job function</a></li>
+<li><a href="#creating-business-service_tackle">Creating a business service</a></li>
+<li><a href="#creating-tag-type_tackle">Creating a tag type</a></li>
+<li><a href="#creating-tag_tackle">Creating a tag</a></li>
+</ul>
+</li>
+<li><a href="#about-reports_tackle">About reports</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="about-pathfinder_tackle">About Tackle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tackle is a cloud-native application that assesses your applications to determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring. Tackle also helps you to plan the migration of your applications to an enterprise Kubernetes platform.</p>
+</div>
+<div class="paragraph">
+<p>Tackle uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders to gather information about applications, to discuss risks flagged by Tackle, and to reach a consensus in formulating recommendations for each application.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="installing-pathfinder_tackle">Installing Tackle</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="installing-operator_tackle">Installing the Tackle Operator</h3>
+<div class="paragraph">
+<p>Download and install the Tackle Operator from <a href="https://operatorhub.io">operatorhub.io</a>.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have <code>admin</code> privileges to install the Tackle Operator.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Navigate to <a href="https://operatorhub.io">operatorhub.io</a>.</p>
+</li>
+<li>
+<p>Click the <strong>Modernization &amp; Migration</strong> category.</p>
+</li>
+<li>
+<p>Click the <strong>Tackle Operator</strong> tile and then click <strong>Install</strong>.</p>
+</li>
+<li>
+<p>Follow the installation instructions.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="installing-application_tackle">Installing the Tackle application</h3>
+<div class="paragraph">
+<p>Install the Tackle application in a project.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The Tackle Operator must be installed on the cluster.</p>
+</li>
+<li>
+<p>You must have <code>project-admin</code> privileges to install the Tackle application in a project.</p>
+</li>
+<li>
+<p>You must create a project for Tackle.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Install the Tackle application in a project by following the procedure for your enterprise Kubernetes platform.</p>
+</li>
+<li>
+<p>Obtain the route or URL of the <code>tackle-ui</code> pod to open the Tackle web console in a new browser window.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="accessing-console_tackle">Logging in to the Tackle web console</h3>
+<div class="paragraph">
+<p>You can log in to the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The Tackle application must be installed.</p>
+</li>
+<li>
+<p>You must have the route of the <code>tackle-ui</code> pod. This is the Tackle web console URL.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In a browser, navigate to the Tackle web console.</p>
+</li>
+<li>
+<p>Enter <code>tackle</code> in the <strong>Username or email</strong> field, <code>password</code> in the <strong>Password</strong> field, and then click <strong>Log in</strong> to access the Tackle web console.</p>
+<div class="paragraph">
+<p>You can review the services of the Tackle web console.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You must change the default password of the tackle user.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="console services_tackle">Tackle web console services</h3>
+<div class="paragraph">
+<p>Tackle web console provides the following services:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Application inventory</p>
+</li>
+<li>
+<p>Assessments</p>
+</li>
+<li>
+<p>Reviews</p>
+</li>
+<li>
+<p>Reports</p>
+</li>
+<li>
+<p>Controls</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="application-inventory_tackle">Application inventory</h4>
+<div class="paragraph">
+<p>The <strong>Application inventory</strong> page enables you to perform the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Manage your application portfolio.</p>
+</li>
+<li>
+<p>Define and manage application dependencies.</p>
+</li>
+<li>
+<p>Link applications to the business services that they support.</p>
+</li>
+<li>
+<p>Describe and categorize applications by using tags.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="assessments_tackle">Assessments</h4>
+<div class="paragraph">
+<p>You can assess your applications on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="paragraph">
+<p>The assessment helps you determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring.</p>
+</div>
+<div class="paragraph">
+<p>The assessment is an interactive questionnaire that gathers information and identifies possible risks and their severity.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="reviews_tackle">Reviews</h4>
+<div class="paragraph">
+<p>You can review a completed assessment on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="paragraph">
+<p>The following information is collected from each reviewer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Proposed action</strong>: Proposed action for the application, for example, replatforming or rehosting.</p>
+</li>
+<li>
+<p><strong>Effort estimate</strong>: How much effort is involved in migrating the application, based on the proposed action and the identified risks.</p>
+</li>
+<li>
+<p><strong>Business criticality</strong>: How critical the application is to your business on a scale of <code>1</code> to <code>10</code>.</p>
+</li>
+<li>
+<p><strong>Work priority</strong>: Your work priority estimate for the proposed action on a scale of <code>1</code> to <code>10</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>Reports</strong> page displays the results of the reviews.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="reports_tackle">Reports</h4>
+<div class="paragraph">
+<p>The <strong>Reports</strong> page displays the results of the application assessments and reviews and can help you to plan your migration.</p>
+</div>
+<div class="paragraph">
+<p>The reports provide information about the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Suitability of applications for containerization.</p>
+</li>
+<li>
+<p>Possible risks and severity.</p>
+</li>
+<li>
+<p>Adoption plan based on estimated effort, work priority, and application dependencies.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="controls_tackle">Controls</h4>
+<div class="paragraph">
+<p>The <strong>Controls</strong> page enables you to manage the following entities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Stakeholder</strong>: A stakeholder is an individual with an interest in an application or a subject matter expert.</p>
+</li>
+<li>
+<p><strong>Stakeholder group</strong>: A stakeholder group is a group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.</p>
+</li>
+<li>
+<p><strong>Job function</strong>: A job function is an attribute of a stakeholder. You use a predefined job function or create a new job function.</p>
+</li>
+<li>
+<p><strong>Business service</strong>: A business service is an attribute of an application, for example, credit card service, transportation, or IT support. You can use a predefined business service or create a new business service.</p>
+</li>
+<li>
+<p><strong>Tag</strong>: A tag is an attribute of an application. Tags are an extensible and flexible way to add metadata to applications. Tags are grouped under a parent tag type. You can use a predefined tag or create a new tag.</p>
+</li>
+<li>
+<p><strong>Tag type</strong>: A tag type defines the rank and background color of a group of related tags.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-applications_tackle">Managing applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can create, import, tag, and modify your applications in the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-application_tackle">Creating an application</h3>
+<div class="paragraph">
+<p>You can create an application on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong> and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the application.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the application.</p>
+</li>
+<li>
+<p><strong>Business service</strong>: Optional. You can select a business service that describes the application.</p>
+</li>
+<li>
+<p><strong>Tags</strong>: Optional. You can select one or more tags.</p>
+</li>
+<li>
+<p><strong>Comments</strong>: Optional. Comments about the application.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new application is displayed on the <strong>Application inventory</strong> page.</p>
+</div>
+</li>
+<li>
+<p>Expand the application to view its tags and comments.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="importing-applications_tackle">Importing applications</h3>
+<div class="paragraph">
+<p>You can import one or more applications into the <strong>Application inventory</strong> page of the Tackle web console by using a CSV file.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You cannot create tags or business services by importing a CSV file.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The CSV file must contain the following fields:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Record Type 1</code>: Required field. The value must be <code>1</code>.</p>
+</li>
+<li>
+<p><code>Application Name</code>: Required field.</p>
+</li>
+<li>
+<p><code>Description</code>: Can have a <code>null</code> value.</p>
+</li>
+<li>
+<p><code>Comments</code>: Can have a <code>null</code> value.</p>
+</li>
+<li>
+<p><code>Business Service</code>: Can have a <code>null</code> value.</p>
+</li>
+<li>
+<p><code>Tag Type 1</code>: Can have a <code>null</code> value.</p>
+</li>
+<li>
+<p><code>Tag 1</code>: Can have a <code>null</code> value.</p>
+<div class="paragraph">
+<p>You can create a maximum of 20 <code>Tag Type &lt;number&gt;</code> and <code>Tag &lt;number&gt;</code> fields.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must create a CSV file.</p>
+<div class="paragraph">
+<p>If you specify values for the business service, tag, or tag type columns, the values must exist on the <strong>Controls</strong> page.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Import</strong>.</p>
+</li>
+<li>
+<p>Browse to the CSV file and click <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Import</strong>.</p>
+<div class="paragraph">
+<p>The imported applications are displayed on the <strong>Application inventory</strong> page .</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="managing-imports_tackle">Managing application imports</h3>
+<div class="paragraph">
+<p>You can manage application imports on the <strong>Application import</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Manage imports</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Application import</strong> page displays a list of application imports.</p>
+</div>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application import and select one of the following options:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Delete</strong> deletes the application import.</p>
+</li>
+<li>
+<p><strong>View error report</strong> displays a table of application import errors.</p>
+</li>
+<li>
+<p><strong>Export errors</strong> enables you to save the application import errors as a CSV file.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="updating-tags-of-application_tackle">Updating the tags assigned to an application</h3>
+<div class="paragraph">
+<p>You can add or remove tags assigned to an application on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Edit icon beside an application.</p>
+</li>
+<li>
+<p>Add or delete tags and click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Expand the application to view the updated tags.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="updating-business-service-of-application_tackle">Updating the business service assigned to an application</h3>
+<div class="paragraph">
+<p>You can update the business service assigned to an application on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The business service must exist on the <strong>Controls</strong> page.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Edit icon beside an application.</p>
+</li>
+<li>
+<p>Select a business service and click <strong>Save</strong>.</p>
+<div class="paragraph">
+<p>The updated business service is displayed in the <strong>Business service</strong> column of the application.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="managing-application-dependencies_tackle">Managing application dependencies</h3>
+<div class="paragraph">
+<p>You can add, delete, and view application dependencies in the <strong>Manage dependencies</strong> window on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application and select <strong>Manage dependencies</strong>.</p>
+</li>
+<li>
+<p>To add dependencies, select applications in the northbound or southbound dependencies fields.</p>
+</li>
+<li>
+<p>To remove dependencies, delete selected applications in the northbound or southbound dependencies fields.</p>
+</li>
+<li>
+<p>Click <strong>Close</strong> to save and close.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-assessments_tackle">Managing assessments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can start, edit, review, and delete application assessments in the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="sect2">
+<h3 id="starting-assessment_tackle">Starting an assessment</h3>
+<div class="paragraph">
+<p>You can start an application assessment on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Select an application that has not been assessed and click the <strong>Assess</strong> button in the toolbar.</p>
+</li>
+<li>
+<p>Select individual stakeholders or stakeholder groups and then click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select responses to questions on each page of the <strong>Application assessment</strong> wizard and then click <strong>Next</strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>All questions are mandatory.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>When you have completed all the responses, click <strong>Save</strong> to save the assessment or <strong>Save and review</strong> to start the assessment review process.</p>
+<div class="paragraph">
+<p>The <strong>Assessment</strong> status of each assessed application is <strong>Completed</strong>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="editing-assessment_tackle">Editing an assessment</h3>
+<div class="paragraph">
+<p>You can edit an application assessment on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Select an application that has been assessed and click the <strong>Assess</strong> button in the toolbar.</p>
+</li>
+<li>
+<p>Click <strong>Continue</strong> to confirm that you want to edit the assessment.</p>
+</li>
+<li>
+<p>After you have updated your responses, click <strong>Save</strong> to save the assessment or <strong>Save and review</strong> to start the assessment review process.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="reviewing-assessment_tackle">Reviewing an assessment</h3>
+<div class="paragraph">
+<p>You can review an application assessment on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Select an application that has been assessed but not reviewed and click the <strong>Review</strong> button in the toolbar.</p>
+</li>
+<li>
+<p>Review the assessment in the <strong>Assessment summary</strong> section on the <strong>Review</strong> page.</p>
+<div class="paragraph">
+<p>The <strong>Assessment summary</strong> table contains a <strong>Risk</strong> column that indicates the severity of the risk associated with each response.</p>
+</div>
+</li>
+<li>
+<p>Select a <strong>Proposed action</strong> and an <strong>Effort estimate</strong>.</p>
+</li>
+<li>
+<p>Set values for <strong>Business criticality</strong> and <strong>Work priority</strong>.</p>
+</li>
+<li>
+<p>Optional: Enter comments in the <strong>Comments</strong> field.</p>
+</li>
+<li>
+<p>Click <strong>Submit review</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Review</strong> status of each application is <strong>Completed</strong>.</p>
+</div>
+</li>
+<li>
+<p>Expand the application to view the review results.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deleting-assessment_tackle">Deleting an assessment</h3>
+<div class="paragraph">
+<p>You can delete an application assessment on the <strong>Application inventory</strong> page of the Tackle web console. Deleting an assessment deletes its review.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application that has been assessed and select <strong>Discard assessment</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Continue</strong> to confirm the deletion.</p>
+<div class="paragraph">
+<p>The <strong>Assessment</strong> and <strong>Review</strong> status of the application are <strong>Not started</strong>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-controls_tackle">Managing controls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Controls</strong> page of the Tackle web console enables you to manage stakeholders, stakeholder groups, job functions, business services, and tags.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-stakeholder_tackle">Creating a stakeholder</h3>
+<div class="paragraph">
+<p>You can create a stakeholder on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The stakeholder must have a valid email address.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Stakeholders</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Email</strong>: Email address of the stakeholder.</p>
+</li>
+<li>
+<p><strong>Display name</strong>: Name of the stakeholder.</p>
+</li>
+<li>
+<p><strong>Job function</strong>: Optional. You can select a predefined job function or type a job function to create it.</p>
+</li>
+<li>
+<p><strong>Groups</strong>: Optional. You can select one or more stakeholder groups from a list of stakeholder groups that you have created.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new stakeholder is displayed on the <strong>Stakeholders</strong> tab.</p>
+</div>
+</li>
+<li>
+<p>Expand the stakeholder to view the stakeholder groups to which the stakeholder belongs.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-stakeholder-group_tackle">Creating a stakeholder group</h3>
+<div class="paragraph">
+<p>You can create stakeholder groups on the <strong>Controls</strong> page of the Tackle web console. Stakeholder groups enable you to assign multiple stakeholders to review an assessment.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Stakeholder groups</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the stakeholder group.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the stakeholder group.</p>
+</li>
+<li>
+<p><strong>Member(s)</strong>: Optional. You can select one or more stakeholders to add to the group.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new stakeholder group is displayed on the <strong>Stakeholder groups</strong> tab.</p>
+</div>
+</li>
+<li>
+<p>Expand the stakeholder group to view the group members.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-job-function_tackle">Creating a job function</h3>
+<div class="paragraph">
+<p>A job function is an attribute of a stakeholder. You can use a predefined job function or create a new job function on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Job functions</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Enter the <strong>Name</strong> of the job function and click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new job function is displayed on the <strong>Job functions</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-business-service_tackle">Creating a business service</h3>
+<div class="paragraph">
+<p>A business service is an attribute of an application. You can create a business service on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Business services</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the business service.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional: Description of the business service.</p>
+</li>
+<li>
+<p><strong>Owner</strong>: Optional: Select a stakeholder.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new business service is displayed on the <strong>Business services</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-tag-type_tackle">Creating a tag type</h3>
+<div class="paragraph">
+<p>You can create a tag type on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>A tag type is the parent of a group of related tags. The tag type defines the rank and background color of the tags on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Tags</strong> tab and then click <strong>Create tag type</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the tag type.</p>
+</li>
+<li>
+<p><strong>Rank</strong>: The rank determines the order in which the tags are displayed.</p>
+</li>
+<li>
+<p><strong>Color</strong>: The color is displayed as the background color for all tags associated with this tag type.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new tag type is displayed on the <strong>Tags</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-tag_tackle">Creating a tag</h3>
+<div class="paragraph">
+<p>You can create a tag on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>Tags are an extensible and flexible way to add metadata to applications. Tags are added to applications on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="paragraph">
+<p>Tags belong to a parent tag type that determines the display order and color of the tags. You can use a predefined tag type or create a new tag type.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Tags</strong> tab and then click <strong>Create tag</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the tag.</p>
+</li>
+<li>
+<p><strong>Tag type</strong>: Select a tag type.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new tag is displayed under its tag type on the <strong>Tags</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="about-reports_tackle">About reports</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can view a report of the assessments and reviews on the <strong>Reports</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Reports</strong> page contains the following sections:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Current landscape</dt>
+<dd>
+<p>This section displays all applications according to their risk levels.</p>
+</dd>
+<dt class="hdlist1">Adoption candidate distribution</dt>
+<dd>
+<p>This section lists the assessed applications with the following columns:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Criticality</strong> is based on the <strong>Business criticality</strong> value of the review.</p>
+</li>
+<li>
+<p><strong>Priority</strong> is based on the <strong>Work priority</strong> value of the review.</p>
+</li>
+<li>
+<p><strong>Effort</strong> is based on the <strong>Effort estimate</strong> value of the review.</p>
+</li>
+<li>
+<p><strong>Decision</strong> is based on the <strong>Proposed action</strong> value of the review.</p>
+<div class="paragraph">
+<p>By default, all applications are selected. You can clear some of the application check boxes to filter the report.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Suggested adoption plan</dt>
+<dd>
+<p>This section displays a suggested adoption plan based on effort, priority, and dependencies.</p>
+</dd>
+<dt class="hdlist1">Identified risks</dt>
+<dd>
+<p>This section lists the severe risks identified in the assessments for all applications.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>
