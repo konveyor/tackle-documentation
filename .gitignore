@@ -3,3 +3,4 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 documentation/doc-installing-and-using-tackle/build/*
+Gemfile.lock
