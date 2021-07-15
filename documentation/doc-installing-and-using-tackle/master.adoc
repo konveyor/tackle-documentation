@@ -25,6 +25,7 @@ include::modules/installing-operator.adoc[leveloffset=+2]
 include::modules/installing-application.adoc[leveloffset=+2]
 include::modules/accessing-console.adoc[leveloffset=+2]
 include::modules/console-services.adoc[leveloffset=+2]
+include::modules/changing-default-password.adoc[leveloffset=+2]
 
 [id="managing-applications_{context}"]
 == Managing applications

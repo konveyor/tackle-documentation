@@ -10,7 +10,7 @@ You can log in to the {project-name} web console.
 .Prerequisites
 
 * The {project-name} application must be installed.
-* You must have the route of the `tackle-ui` pod. This is the {project-name} web console URL.
+* You must have the route of the `tackle-ui` pod. This is the URL of the {project-name} web console.
 
 .Procedure
 

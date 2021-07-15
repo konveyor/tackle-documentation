@@ -38,5 +38,5 @@ Install the {project-name} application in a project.
 .Procedure
 
 . Install the {project-name} application in a project by following the procedure for your enterprise Kubernetes platform.
-. Obtain the route or URL of the `tackle-ui` pod to open the {project-name} web console in a new browser window.
+. Obtain the route or URL of the `tackle-ui` pod and record it. This is the URL of the {project-name} web console
 endif::[]
