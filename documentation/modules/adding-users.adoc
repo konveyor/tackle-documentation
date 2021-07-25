@@ -1,0 +1,20 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="adding-users_{context}"]
+= Adding users
+
+You can add users by using the Keycloak admin console.
+
+.Prerequisites
+
+* You must have `cluster-admin` privileges
+* You must have the Keycloak admin user name and password.
+
+.Procedure
+
+. Log in to the Keycloak admin console at `https://<www.example.com>/auth`, specifying the {project-name} cluster URL.
+. Create a new user in the *Tackle* realm. See link:https://www.keycloak.org/docs/latest/server_admin/index.html#_create-new-user[Creating a new user] in the Keycloak documentation.
+. Create a password for the new user. See link:https://www.keycloak.org/docs/latest/server_admin/index.html#creating-a-password-for-the-user[Creating a password for the user].
+. Optional: Set attributes and permissions for the new user. See link:https://www.keycloak.org/docs/latest/server_admin/index.html#user-profile[User profile].
