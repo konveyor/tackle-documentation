@@ -7,7 +7,7 @@
 :project-version: 1.0
 :namespace:
 :ocp: OpenShift Container Platform
-:ocp-version: 4.7
+:ocp-version: 4.8
 :operator: Tackle Operator
 
 // metadata attributes
