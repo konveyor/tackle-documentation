@@ -25,7 +25,22 @@ include::modules/installing-operator.adoc[leveloffset=+2]
 include::modules/installing-application.adoc[leveloffset=+2]
 include::modules/accessing-console.adoc[leveloffset=+2]
 include::modules/console-services.adoc[leveloffset=+2]
+
+== Managing users and credentials
+
+You can manage {project-name} users and passwords by using the Keycloak admin console.
+
+include::modules/accessing-keycloak-admin-console.adoc[leveloffset=+2]
 include::modules/changing-default-password.adoc[leveloffset=+2]
+include::modules/adding-users.adoc[leveloffset=+2]
+
+[id="additional-resources-keycloak_{context}"]
+[discrete]
+=== Additional resources for Keycloak
+
+* link:https://www.keycloak.org/docs/latest/server_admin/#admin-console[Admin console] in the Keycloak documentation.
+* link:https://www.keycloak.org/docs/latest/server_admin/#user-management[User management] in the Keycloak documentation.
+* link:https://www.keycloak.org/getting-started/getting-started-operator-kubernetes[Keycloak Operator on Kubernetes] in the Keycloak documentation.
 
 [id="managing-applications_{context}"]
 == Managing applications

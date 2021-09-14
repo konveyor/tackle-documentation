@@ -1,0 +1,31 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="accessing-keycloak-admin-console_{context}"]
+= Accessing the Keycloak admin console
+
+When you install {project-name}, a Keycloak admin user is created. You must obtain the admin user name and password to log in to the Keycloak admin console. The credentials are stored in the `tackle-keycloak` secret.
+
+.Prerequisites
+
+* You must have `cluster-admin` privileges.
+
+.Procedure
+
+. Run the following command to obtain the admin credentials:
++
+[source,terminal]
+----
+$ kubectl get secret tackle-keycloak -o go-template='{{range $k,$v := .data}}{{printf "%s: " $k}}{{if not $v}}{{$v}}{{else}}{{$v | base64decode}}{{end}}{{"\n"}}{{end}}'
+----
++
+.Example output
+[source,terminal]
+----
+ADMIN_PASSWORD: <password>
+ADMIN_USERNAME: admin
+----
+
+. Launch a browser and navigate to `https://<www.example.com>/auth`, specifying the {project-name} cluster URL.
+. Log in to the Keycloak admin console with the admin user name and password.
