@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-[id="console services_{context}"]
+[id="console-services_{context}"]
 = {project-name} web console services
 
 {project-name} web console provides the following services:
