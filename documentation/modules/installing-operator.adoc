@@ -11,7 +11,7 @@ ifeval::["{build}" == "downstream"]
 The {operator} is a Community Operator. Red Hat provides no support for Community Operators.
 ====
 
-Install the {operator} by using the OpenShift web console.
+Install the {operator} by using Operator Lifecycle Manager.
 
 .Prerequisites
 
@@ -20,10 +20,12 @@ Install the {operator} by using the OpenShift web console.
 
 .Procedure
 
-. In the OpenShift Container Platform web console, click *Operators* -> *OperatorHub*.
+. In the {ocp} web console, click *Operators* -> *OperatorHub*.
 . Click the *Modernization & Migration* category and then click the *{operator}* tile.
 . Click *Install*.
 . Select a project from the *Installed Namespace* list and click *Install*.
+. Click *Operators* -> *Installed Operators* and select the {operator}.
+. Under *Provided APIs*, click *Create instance* on the Tackle Toolkit card.
 . After the {operator} is installed, click *View Operator* to verify the installation.
 endif::[]
 ifeval::["{build}" == "upstream"]
@@ -31,7 +33,7 @@ Download and install the {operator} from link:https://operatorhub.io[operatorhub
 
 .Prerequisites
 
-* You must have `admin` privileges to install the {operator}.
+* You must have `admin` privileges.
 
 .Procedure
 
