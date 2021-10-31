@@ -9,15 +9,20 @@ You can log in to the {project-name} web console.
 
 .Prerequisites
 
-* The {project-name} application must be installed.
-* You must have the route of the `tackle-ui` pod. This is the URL of the {project-name} web console.
+* You must have the {project-name} application installed.
 
 .Procedure
 
-. In a browser, navigate to the {project-name} web console.
-. Enter `tackle` in the *Username or email* field, `password` in the *Password* field, and then click *Log in* to access the {project-name} web console.
-+
-You can review the services of the {project-name} web console.
+ifeval::["{build}" == "upstream"]
+. In the Kubernetes dashboard, click *Services* -> *Ingresses*.
+. Click the *Endpoint* of the `tackle-sample` ingress to launch the {project-name} web console in a new browser window.
+endif::[]
+ifeval::["{build}" == "downstream"]
+. In the {ocp} web console, click *Workloads* -> *Pods*.
+. Click the `tackle-ui` pod to view its route.
+. Click the route to launch the {project-name} web console in a new browser window.
+endif::[]
+. Enter `tackle` in the *Username or email* field, `password` in the *Password* field, and click *Log in*.
 
 [IMPORTANT]
 ====

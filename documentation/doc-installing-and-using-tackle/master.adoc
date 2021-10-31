@@ -22,7 +22,7 @@ include::modules/about-pathfinder.adoc[leveloffset=+1]
 == Installing {project-name}
 
 include::modules/installing-operator.adoc[leveloffset=+2]
-include::modules/installing-application.adoc[leveloffset=+2]
+include::modules/installing-tackle-application.adoc[leveloffset=+2]
 include::modules/accessing-console.adoc[leveloffset=+2]
 include::modules/console-services.adoc[leveloffset=+2]
 
