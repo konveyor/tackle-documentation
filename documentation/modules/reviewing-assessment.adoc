@@ -5,12 +5,16 @@
 [id="reviewing-assessment_{context}"]
 = Reviewing an assessment
 
-You can review an application assessment on the *Application inventory* page of the {project-name} web console.
+You review an application assessment on the *Application inventory* page of the {project-name} web console.
+
+.Prerequisites
+
+* An application must have a *Completed* assessment status and a *Not started* review status.
 
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
-. Select an application that has been assessed but not reviewed and click the *Review* button in the toolbar.
+. Select an application with a *Completed* assessment status and a *Not started* review status and click the *Review* button in the toolbar.
 . Review the assessment in the *Assessment summary* section on the *Review* page.
 +
 The *Assessment summary* table contains a *Risk* column that indicates the severity of the risk associated with each response.

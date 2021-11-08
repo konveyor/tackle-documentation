@@ -1,0 +1,26 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="copying-assessments-and-reviews_{context}"]
+= Copying and applying assessments and reviews
+
+You copy an assessment or assessment and review from a single application and apply them to multiple applications on the *Application inventory* page of the {project-name} web console.
+
+You can apply assessments and reviews to groups of related applications, for example, applications written in Java or belonging to the same business service.
+
+.Prerequisites
+
+* An application must have a *Completed* assessment status or *Completed* assessment and review statuses, depending on whether you are copying an assessment or an assessment and review.
+
+.Procedure
+
+. In the {project-name} web console, click *Application inventory*.
+. Click the {kebab} beside an application with a *Completed* assessment status or *Completed* assessment and review statuses.
+. Select *Copy assessment* or *Copy assessment and review*.
+. Optional: In the dialog box, click *Name* to select a filter, for example, *Tag*, and select a tag, for example, *Java*, to display a filtered list of applications.
+. Select the applications to which you want to apply the copied assessment or assessment and review.
+. If a selected application has an existing assessment or review, select the *Yes, continue* check box to confirm that existing assessments and reviews will be overwritten.
+. Click *Copy*.
++
+The selected applications display a *Completed* assessment status or *Completed* assessment and review statuses.

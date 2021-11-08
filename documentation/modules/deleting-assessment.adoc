@@ -5,12 +5,16 @@
 [id="deleting-assessment_{context}"]
 = Deleting an assessment
 
-You can delete an application assessment on the *Application inventory* page of the {project-name} web console. Deleting an assessment deletes its review.
+You delete an application assessment on the *Application inventory* page of the {project-name} web console. Deleting an assessment deletes its review.
+
+.Prerequisites
+
+* An application must have a *Completed* assessment status.
 
 .Procedure
 
 . In the {project-name} web console, click *Application inventory*.
-. Click the {kebab} beside an application that has been assessed and select *Discard assessment*.
+. Click the {kebab} beside an application with a *Completed* assessment status and select *Discard assessment*.
 . Click *Continue* to confirm the deletion.
 +
 The *Assessment* and *Review* status of the application are *Not started*.
