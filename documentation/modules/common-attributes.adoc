@@ -7,8 +7,9 @@
 :project-version: 1.0
 :namespace:
 :ocp: OpenShift Container Platform
-:ocp-version: 4.8
+:ocp-version: 4.9
 :operator: Tackle Operator
+:oc: oc
 
 // metadata attributes
 :icons: font

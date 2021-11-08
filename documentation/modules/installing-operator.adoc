@@ -11,7 +11,7 @@ ifeval::["{build}" == "downstream"]
 The {operator} is a Community Operator. Red Hat provides no support for Community Operators.
 ====
 
-Install the {operator} by using Operator Lifecycle Manager.
+You install the {operator} on an {ocp} cluster by using Operator Lifecycle Manager.
 
 .Prerequisites
 
@@ -23,22 +23,30 @@ Install the {operator} by using Operator Lifecycle Manager.
 . In the {ocp} web console, click *Operators* -> *OperatorHub*.
 . Click the *Modernization & Migration* category and then click the *{operator}* tile.
 . Click *Install*.
-. Select a project from the *Installed Namespace* list and click *Install*.
-. Click *Operators* -> *Installed Operators* and select the {operator}.
-. Under *Provided APIs*, click *Create instance* on the Tackle Toolkit card.
-. After the {operator} is installed, click *View Operator* to verify the installation.
+. Click *Install* to install the Operator in the +{namespace}+ namespace.
 endif::[]
 ifeval::["{build}" == "upstream"]
-Download and install the {operator} from link:https://operatorhub.io[operatorhub.io].
+You download and install the {operator} on an {ocp} cluster.
 
 .Prerequisites
 
-* You must have `admin` privileges.
+* You must have `cluster-admin` privileges.
 
 .Procedure
 
-. Navigate to link:https://operatorhub.io[operatorhub.io].
-. Click the *Modernization & Migration* category.
-. Click the *{operator}* tile and then click *Install*.
-. Follow the installation instructions.
+. Install the {operator}:
++
+[source,terminal]
+----
+$ kubectl create -f https://operatorhub.io/install/tackle-operator.yaml
+----
++
+The {operator} is installed in the +{namespace}+ namespace.
 endif::[]
+
+. Verify the {operator} installation by viewing its resources:
++
+[source,terminal,subs="attributes+"]
+----
+$ {oc} get all -n {namespace}
+----

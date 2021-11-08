@@ -1,0 +1,40 @@
+// Module included in the following assemblies:
+//
+// * documentation/doc-installing-and-using-tackle/master.adoc
+
+[id="installing-tackle-application_{context}"]
+= Installing the {project-name} application
+
+ifeval::["{build}" == "downstream"]
+You install the {project-name} application in a project by using the {ocp} web console.
+
+.Prerequisites
+
+* The {operator} must be installed on an {ocp} cluster.
+* You must have `project-admin-user` privileges.
+
+.Procedure
+
+. Click *Operators* -> *Installed Operators* and select the {operator}.
+. Under *Provided APIs*, click *Create instance* on the Tackle Toolkit card.
+. Click *Workloads* -> *Deployments* in your project to verify the installation.
+endif::[]
+ifeval::["{build}" == "upstream"]
+You install the {project-name} application in a namespace by instantiating the {operator}.
+
+.Prerequisites
+
+* The {operator} must be installed on an {ocp} cluster.
+* You must have `project-admin` privileges.
+
+.Procedure
+
+. Instantiate the {operator}:
++
+[source,terminal,subs="attributes+"]
+----
+$ kubectl apply -n {namespace} -f https://raw.githubusercontent.com/konveyor/tackle-operator/main/src/main/resources/k8s/tackle/tackle.yaml
+----
+
+. In the Kubernetes dashboard, click *Workloads* -> *Deployments* to verify the installation.
+endif::[]
