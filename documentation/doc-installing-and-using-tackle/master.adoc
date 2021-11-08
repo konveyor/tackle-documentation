@@ -62,6 +62,7 @@ You can start, edit, review, and delete application assessments in the *Applicat
 include::modules/starting-assessment.adoc[leveloffset=+2]
 include::modules/editing-assessment.adoc[leveloffset=+2]
 include::modules/reviewing-assessment.adoc[leveloffset=+2]
+include::modules/copying-assessments-and-reviews.adoc[leveloffset=+2]
 include::modules/deleting-assessment.adoc[leveloffset=+2]
 
 [id="managing-controls_{context}"]
