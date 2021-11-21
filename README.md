@@ -16,7 +16,7 @@ This repository contains the files for Tackle documentation. Tackle is part of t
 
 ## Submitting issues
 
-Can submit issues at [konveyor/tackle-operator/issues](https://github.com/konveyor/tackle-operator/issues).
+You can submit issues at [konveyor/tackle-operator/issues](https://github.com/konveyor/tackle-operator/issues).
 
 ## Contributing to Tackle documentation
 

@@ -78,3 +78,5 @@ include::modules/creating-tag-type.adoc[leveloffset=+2]
 include::modules/creating-tag.adoc[leveloffset=+2]
 
 include::modules/about-reports.adoc[leveloffset=+1]
+
+include::modules/upgrading.adoc[leveloffset=+1]
