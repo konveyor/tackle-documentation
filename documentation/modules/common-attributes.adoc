@@ -3,8 +3,8 @@
 
 // text attributes
 :kebab: Options menu image:kebab.png[title="Options menu",height=20]
-:project-name: MTA Pathfinder
-:project-version: 1.0
+:project-name: Pathfinder
+:project-version: 1.1
 :namespace:
 :ocp: OpenShift Container Platform
 :ocp-version: 4.9
