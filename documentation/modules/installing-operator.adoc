@@ -36,12 +36,12 @@ You download and install the {operator} on an {ocp} cluster.
 
 . Install the {operator}:
 +
-[source,terminal]
+[source,terminal,subs="attributes+"]
 ----
 $ {oc} create -f https://operatorhub.io/install/tackle-operator.yaml
 ----
 +
-The {operator} is installed in the +{namespace}+ namespace.
+The {operator} is installed in the +{namespace}+ namespace by default.
 endif::[]
 
 . Verify the {operator} installation by viewing its resources:
