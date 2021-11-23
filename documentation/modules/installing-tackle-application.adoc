@@ -33,8 +33,9 @@ You install the {project-name} application in a namespace by instantiating the {
 +
 [source,terminal,subs="attributes+"]
 ----
-$ {oc} apply -n {namespace} -f https://raw.githubusercontent.com/konveyor/tackle-operator/main/src/main/resources/k8s/tackle/tackle.yaml
+$ {oc} apply -n <namespace> -f https://raw.githubusercontent.com/konveyor/tackle-operator/main/src/main/resources/k8s/tackle/tackle.yaml <1>
 ----
+<1> Specify the namespace in which you want to install the {project-name} application.
 
 . In the Kubernetes dashboard, click *Workloads* -> *Deployments* to verify the installation.
 endif::[]
