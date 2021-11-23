@@ -13,13 +13,12 @@ You can manually upgrade the {project-name} application from 1.0.0 to 1.1.0.
 
 .Procedure
 
-. Update the `tackle-keycloak` deployment:
+. Update the `tackle-keycloak` deployment, specifying the namespace of the {project-name} application:
 +
 [source,terminal,subs="attributes+"]
 ----
-$ {oc} -n <namespace> exec deployments/tackle-keycloak -c tackle-keycloak -- bash -c '/opt/jboss/keycloak/bin/kcadm.sh update realms/tackle -s internationalizationEnabled=true -s supportedLocales+=en -s supportedLocales+=es -s defaultLocale=en --server http://localhost:8080/auth --realm master --user $KEYCLOAK_USER --password $KEYCLOAK_PASSWORD' <1>
+$ {oc} -n <namespace> exec deployments/tackle-keycloak -c tackle-keycloak -- bash -c '/opt/jboss/keycloak/bin/kcadm.sh update realms/tackle -s internationalizationEnabled=true -s supportedLocales+=en -s supportedLocales+=es -s defaultLocale=en --server http://localhost:8080/auth --realm master --user $KEYCLOAK_USER --password $KEYCLOAK_PASSWORD'
 ----
-<1> Specify the namespace in which you installed the {project-name} application.
 
 . Update the `tackle-application-inventory-rest` deployment:
 +
