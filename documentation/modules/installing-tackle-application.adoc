@@ -20,22 +20,26 @@ You install the {project-name} application in a project by using the {ocp} web c
 . Click *Workloads* -> *Deployments* in your project to verify the installation.
 endif::[]
 ifeval::["{build}" == "upstream"]
-You install the {project-name} application in a namespace by instantiating the {operator}.
+You install the {project-name} application in a namespace by creating an instance of the {project-name} application.
 
 .Prerequisites
 
-* The {operator} must be installed on an {ocp} cluster.
+* The {operator} must be installed on the cluster.
 * You must have `project-admin` privileges.
 
 .Procedure
 
-. Instantiate the {operator}:
+. Create an instance of the {project-name} application, specifying its namespace:
 +
 [source,terminal,subs="attributes+"]
 ----
-$ {oc} apply -n <namespace> -f https://raw.githubusercontent.com/konveyor/tackle-operator/main/src/main/resources/k8s/tackle/tackle.yaml <1>
+$ {oc} apply -n <namespace> -f https://raw.githubusercontent.com/konveyor/tackle-operator/main/src/main/resources/k8s/tackle/tackle.yaml
 ----
-<1> Specify the namespace in which you want to install the {project-name} application.
++
+[NOTE]
+====
+You can create multiple instances of the {project-name} application in the same namespace by specifying a unique name for each instance in the `tackle.yaml` file.
+====
 
 . In the Kubernetes dashboard, click *Workloads* -> *Deployments* to verify the installation.
 endif::[]
