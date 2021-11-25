@@ -6,7 +6,7 @@
 = Installing the {project-name} application
 
 ifeval::["{build}" == "downstream"]
-You install the {project-name} application in a project by using the {ocp} web console.
+You install {project-name} in a project by using the {ocp} web console.
 
 .Prerequisites
 
@@ -20,7 +20,7 @@ You install the {project-name} application in a project by using the {ocp} web c
 . Click *Workloads* -> *Deployments* in your project to verify the installation.
 endif::[]
 ifeval::["{build}" == "upstream"]
-You install the {project-name} application in a namespace by creating an instance of the {project-name} application.
+You install {project-name} in a namespace by creating an instance of the {project-name} application.
 
 .Prerequisites
 
