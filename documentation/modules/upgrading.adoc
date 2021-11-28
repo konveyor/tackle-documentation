@@ -20,7 +20,7 @@ For each step, specify the namespace and the {project-name} instance name.
 [source,terminal,subs="attributes+"]
 ----
 $ {oc} -n <namespace> exec deployments/<tackle_instance>-keycloak \
-  -c tackle-keycloak -- bash -c '/opt/jboss/keycloak/bin/kcadm.sh \
+  -c <tackle_instance>-keycloak -- bash -c '/opt/jboss/keycloak/bin/kcadm.sh \
   update realms/tackle -s internationalizationEnabled=true -s supportedLocales+=en \
   -s supportedLocales+=es -s defaultLocale=en --server http://localhost:8080/auth \
   --realm master --user $KEYCLOAK_USER --password $KEYCLOAK_PASSWORD'
@@ -31,7 +31,7 @@ $ {oc} -n <namespace> exec deployments/<tackle_instance>-keycloak \
 [source,terminal,subs="attributes+"]
 ----
 $ {oc} set image -n <namespace> deployment/<tackle_instance>-application-inventory-rest \
-  tackle-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.1.0-native
+  <tackle_instance>-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.1.0-native
 ----
 
 . Update the `controls-rest` deployment:
@@ -39,7 +39,7 @@ $ {oc} set image -n <namespace> deployment/<tackle_instance>-application-invento
 [source,terminal,subs="attributes+"]
 ----
 $ {oc} set image -n <namespace> deployment/<tackle_instance>-controls-rest \
-  tackle-controls-rest=quay.io/konveyor/tackle-controls:1.1.0-native
+  <tackle_instance>-controls-rest=quay.io/konveyor/tackle-controls:1.1.0-native
 ----
 
 . Update the `pathfinder-rest` deployment:
@@ -47,7 +47,7 @@ $ {oc} set image -n <namespace> deployment/<tackle_instance>-controls-rest \
 [source,terminal,subs="attributes+"]
 ----
 $ {oc} set image -n <namespace> deployment/<tackle_instance>-pathfinder-rest \
-  tackle-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.1.0-native
+  <tackle_instance>-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.1.0-native
 ----
 
 . Update the `ui` deployment:
@@ -55,7 +55,7 @@ $ {oc} set image -n <namespace> deployment/<tackle_instance>-pathfinder-rest \
 [source,terminal,subs="attributes+"]
 ----
 $ {oc} set image -n <namespace> deployment/<tackle_instance>-ui \
-  tackle-ui=quay.io/konveyor/tackle-ui:1.1.0
+  <tackle_instance>-ui=quay.io/konveyor/tackle-ui:1.1.0
 ----
 
 . Log in to the web console and click the Help icon beside the user name to verify the upgrade.
