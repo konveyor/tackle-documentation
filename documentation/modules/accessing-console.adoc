@@ -2,6 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
+:_content-type: PROCEDURE
 [id="accessing-console_{context}"]
 = Logging in to the {project-name} web console
 

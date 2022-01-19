@@ -2,6 +2,7 @@
 //
 // * documentation/doc-Pathfinder/master.adoc
 
+:_content-type: SNIPPET
 [preface]
 [id="making-open-source-more-inclusive"]
 = Making open source more inclusive

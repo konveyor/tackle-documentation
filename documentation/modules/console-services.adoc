@@ -2,6 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
+:_content-type: CONCEPT
 [id="console-services_{context}"]
 = {project-name} web console services
 
