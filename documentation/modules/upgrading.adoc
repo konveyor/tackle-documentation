@@ -5,11 +5,72 @@
 [id="upgrading_{context}"]
 = Upgrading the {project-name} application
 
+You manually upgrade instances of the Tackle application.
+
+[id="upgrading-from-tackle-version_1-1-to-1-2_{context}"]
+== Upgrading from version 1.1.0 to 1.2.0
+
+You manually upgrade an instance of the Tackle application from 1.1.0 to 1.2.0.
+
+.Prerequisites
+
+* You must have project administrator privileges.
+
+.Procedure
+
+For each step, specify the namespace and the {project-name} instance name.
+
+. Update the `keycloak` deployment of the {project-name} instance:
++
+[source,terminal,subs="attributes+"]
+----
+$ {oc} set image -n <namespace> deployment/<tackle_instance>-keycloak keycloak-theme=quay.io/konveyor/tackle-keycloak-init:1.2.0
+----
+
+. Update the `application-inventory-rest` deployment:
++
+[source,terminal,subs="attributes+"]
+----
+$ {oc} set image -n <namespace> deployment/<tackle_instance>-application-inventory-rest \
+  <tackle_instance>-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.2.0-native
+----
+
+. Update the `controls-rest` deployment:
++
+[source,terminal,subs="attributes+"]
+----
+$ {oc} set image -n <namespace> deployment/<tackle_instance>-controls-rest \
+  <tackle_instance>-controls-rest=quay.io/konveyor/tackle-controls:1.2.0-native
+----
+
+. Update the `pathfinder-rest` deployment:
++
+[source,terminal,subs="attributes+"]
+----
+$ {oc} set image -n <namespace> deployment/<tackle_instance>-pathfinder-rest \
+  <tackle_instance>-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.2.0-native
+----
+
+. Update the `ui` deployment:
++
+[source,terminal,subs="attributes+"]
+----
+$ {oc} set image -n <namespace> deployment/<tackle_instance>-ui \
+  <tackle_instance>-ui=quay.io/konveyor/tackle-ui:1.2.0
+----
+
+. Log in to the web console and click the Help icon beside the user name to verify the upgrade.
++
+The *About {project-name}* window opens and displays the version number.
+
+[id="upgrading-from-tackle-version-1-0-to-1-1_{context}"]
+== Upgrading from version 1.0.0 to 1.1.0
+
 You manually upgrade an instance of the {project-name} application from 1.0.0 to 1.1.0.
 
 .Prerequisites
 
-* You must have `project-admin-user` privileges.
+* You must have project administrator privileges.
 
 .Procedure
 
