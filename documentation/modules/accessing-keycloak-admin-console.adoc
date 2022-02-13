@@ -2,7 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
-:_content-type: CONCEPT
+:_content-type: PROCEDURE
 [id="accessing-keycloak-admin-console_{context}"]
 = Accessing the Keycloak admin console
 
