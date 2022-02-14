@@ -2,6 +2,7 @@
 //
 // * documentation/doc-installing-and-using-tackle/master.adoc
 
+:_content-type: PROCEDURE
 [id="managing-application-dependencies_{context}"]
 = Managing application dependencies
 
