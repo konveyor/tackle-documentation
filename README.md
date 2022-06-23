@@ -1,5 +1,8 @@
 <img src="assets/img/konveyor-logo-tackle.svg" alt="Logo" width="100" />
 
+> **Warning** Tackle 2.0 has been released and all Tackle documentation has been moved to the [new official Konveyor documentation website](https://konveyor.github.io/tackle2/) and [GitHub Repo](https://konveyor.github.io/tackle2/).
+
+
 # Tackle documentation
 
 This repository contains the files for Tackle documentation. Tackle is part of the [Konveyor project](https://www.konveyor.io/).
