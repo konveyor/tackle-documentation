@@ -31,7 +31,12 @@ See the [Contributors Guide](CONTRIBUTING.adoc) for details.
 ## Code of conduct
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkonveyor%2Ftackle-documentation.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkonveyor%2Ftackle-documentation?ref=badge_shield)
 
 ## PR preview rendering
 
 [![](https://www.netlify.com/img/global/badges/netlify-light.svg)](https://www.netlify.com)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkonveyor%2Ftackle-documentation.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkonveyor%2Ftackle-documentation?ref=badge_large)
