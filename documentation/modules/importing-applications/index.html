@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Tackle Documentation | Tackle documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Tackle Documentation" />
+<meta name="author" content="Tackle documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tackle documentation" />
+<meta property="og:description" content="Tackle documentation" />
+<meta property="og:site_name" content="Tackle Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tackle Documentation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tackle documentation team"},"description":"Tackle documentation","headline":"Tackle Documentation","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/konveyor-logo-tackle.svg"},"name":"Tackle documentation team"},"url":"/documentation/modules/importing-applications/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/"><img src="/assets/img/konveyor-logo-tackle.svg" alt="Tackle Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/tackle-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="importing-applications_tackle">Importing applications</h1>
+<div class="paragraph">
+<p>You can import one or more applications into the <strong>Application inventory</strong> page of the Tackle web console by using a CSV file.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You cannot create tags or business services by importing a CSV file. Specified tags or business services must exist in the web console before you import the applications.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The CSV file contains the following fields:</p>
+</div>
+<div class="paragraph">
+<p><code>Record Type 1</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Describes an application or application dependencies.</p>
+</li>
+<li>
+<p>Required for all records.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following values are allowed for <code>Record Type 1</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>1</code>: Application: This option has the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Application Name</code>: Required.</p>
+</li>
+<li>
+<p><code>Description</code>: Optional.</p>
+</li>
+<li>
+<p><code>Comments</code>: Optional.</p>
+</li>
+<li>
+<p><code>Business Service</code>: Optional. Must exist in the web console.</p>
+</li>
+<li>
+<p><code>Tag Type &lt;1..20&gt;</code>: Optional. Must exist in the web console.</p>
+</li>
+<li>
+<p><code>Tag &lt;1..20&gt;</code>: Optional. Must exist in the web console.</p>
+<div class="paragraph">
+<p>You can import up to 20 <code>Tag Type &lt;x&gt;</code> and <code>Tag &lt;x&gt;</code> fields.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>2</code>: Application dependencies: This option requires the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Application Name</code></p>
+</li>
+<li>
+<p><code>Dependency</code>: Must be the same as the <code>Application Name</code> of the dependency.</p>
+</li>
+<li>
+<p><code>Dependency Direction</code>: Allowed values are <code>northbound</code> and <code>southbound</code>.</p>
+<div class="paragraph">
+<p>All other fields are empty.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. CSV example</caption>
+<colgroup>
+<col style="width: 6.25%;">
+<col style="width: 12.5%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Record Type 1</th>
+<th class="tableblock halign-left valign-top">Application Name</th>
+<th class="tableblock halign-left valign-top">Dependency</th>
+<th class="tableblock halign-left valign-top">Dependency Direction</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Comments</th>
+<th class="tableblock halign-left valign-top">Business Service</th>
+<th class="tableblock halign-left valign-top">Tag Type 1</th>
+<th class="tableblock halign-left valign-top">Tag 1</th>
+<th class="tableblock halign-left valign-top">Tag Type 2</th>
+<th class="tableblock halign-left valign-top">Tag 2</th>
+<th class="tableblock halign-left valign-top">Tag Type 3</th>
+<th class="tableblock halign-left valign-top">Tag 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Purchasing</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vendor management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required for purchase order processing and accounts payable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Z/OS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COBOL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Purchasing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">northbound</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-PO</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requisitions, purchase orders, goods received</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requisition to receipt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Z/OS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COBOL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Payroll</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payroll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To be retired at the end of the financial year</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oracle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Payroll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-GL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">northbound</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Payroll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">southbound</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-GL</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General Ledger</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Z/OS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COBOL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-HR</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Human Resources</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Go live scheduled for Q3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RHEL 8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PostgreSQL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Valid CSV file.</p>
+</li>
+<li>
+<p>Specified business services, tag types, and tags created in the web console.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Import</strong>.</p>
+</li>
+<li>
+<p>Browse to the CSV file and click <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Import</strong>.</p>
+<div class="paragraph">
+<p>The imported applications are displayed on the <strong>Application inventory</strong> page .</p>
+</div>
+</li>
+</ol>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Installing and using Tackle | Tackle Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Installing and using Tackle" />
+<meta name="author" content="Tackle documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tackle documentation" />
+<meta property="og:description" content="Tackle documentation" />
+<meta property="og:site_name" content="Tackle Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Installing and using Tackle" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tackle documentation team"},"description":"Tackle documentation","headline":"Installing and using Tackle","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/konveyor-logo-tackle.svg"},"name":"Tackle documentation team"},"url":"/CONTRIBUTING/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/"><img src="/assets/img/konveyor-logo-tackle.svg" alt="Tackle Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/tackle-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1>Contributors Guide</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Improvements to Tackle documentation are welcome.</p>
+</div>
+<div class="paragraph">
+<p>Read the [Guidelines for Red Hat Documentation](<a href="https://redhat-documentation.github.io/" class="bare">https://redhat-documentation.github.io/</a>) before opening a pull request.</p>
+</div>
+<div class="paragraph">
+<p>Use the following steps to create a pull request for the Tackle documentation repository.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Fork the <a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> GitHub repository.</p>
+<div class="paragraph">
+<p>Click the <strong>Fork</strong> button in the top right corner of the page.</p>
+</div>
+</li>
+<li>
+<p>Clone the forked repository locally.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ git clone git@github.com:YOUR_USERNAME/tackle-documentation.git</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the upstream repository.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>git remote add -f upstream git@github.com:tackle-documentation.git</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Get the latest changes.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ git fetch upstream</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Check out a topic branch.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ git checkout -b BRANCH_NAME upstream/main</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Make the desired edits.</p>
+<div class="paragraph">
+<p>The documentation is written in <a href="http://asciidoc.org/">AsciiDoc</a>. Review the <a href="#asciidoc_guidelines">AsciiDoc Guidelines and Tips</a> section of this guide before making changes.</p>
+</div>
+</li>
+<li>
+<p>Build the guides to verify your changes.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to the appropriate guide&#8217;s directory and issue the following command.  Note that you must have <a href="http://asciidoctor.org/">Asciidoctor</a> installed.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ cd documentation/&lt;document&gt;
+$ asciidoctor -t -dbook -a toc -o html master.adoc</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>View the generated HTML file in a browser.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Add each new or updated file to git.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ git add FILE_NAME.adoc</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Commit the changes locally.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ git commit -m "My commit message."</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Push the changes to your forked repository.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ git push origin HEAD</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Open a pull request to merge your changes to the master branch.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to your forked repository in a browser:  <a href="https://github.com/YOUR_USERNAME/konveyor/tackle-documentation" class="bare">https://github.com/YOUR_USERNAME/konveyor/tackle-documentation</a>.</p>
+</li>
+<li>
+<p>Open a new pull request. Be sure to review the diff before submitting.</p>
+</li>
+<li>
+<p>A member of the Tackle documentation team will merge or provide feedback on your request.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="building-the-guides">Building the Guides</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Navigate to the appropriate guide&#8217;s directory and issue the following command.  Note that you must have <a href="http://asciidoctor.org/">Asciidoctor</a> installed.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code>$ cd documentation/&lt;document&gt;
+$ asciidoctor -t -dbook -a toc -o html master.adoc</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>View the generated HTML file in a browser.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="publishing-the-guides">Publishing the Guides</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Tackle guides are published downstream on the <a href="https://access.redhat.com/documentation/en/migration_toolkit_for_applications/">Red Hat Customer Portal</a>.</p>
+</div>
+</div>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Installing and using Tackle | Tackle Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Installing and using Tackle" />
+<meta name="author" content="Tackle documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tackle documentation" />
+<meta property="og:description" content="Tackle documentation" />
+<meta property="og:site_name" content="Tackle Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Installing and using Tackle" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tackle documentation team"},"description":"Tackle documentation","headline":"Installing and using Tackle","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/konveyor-logo-tackle.svg"},"name":"Tackle documentation team"},"url":"/documentation/doc-installing-and-using-tackle/master/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/"><img src="/assets/img/konveyor-logo-tackle.svg" alt="Tackle Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/tackle-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1>Installing and using Tackle</h1>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#about-pathfinder_tackle">About Tackle</a></li>
+<li><a href="#installing-pathfinder_tackle">Installing Tackle</a>
+<ul class="sectlevel2">
+<li><a href="#installing-operator_tackle">Installing the Tackle Operator</a></li>
+<li><a href="#installing-tackle-application_tackle">Installing the Tackle application</a></li>
+<li><a href="#accessing-console_tackle">Logging in to the Tackle web console</a></li>
+<li><a href="#console-services_tackle">Tackle web console services</a>
+<ul class="sectlevel3">
+<li><a href="#application-inventory_tackle">Application inventory</a></li>
+<li><a href="#assessments_tackle">Assessments</a></li>
+<li><a href="#reviews_tackle">Reviews</a></li>
+<li><a href="#reports_tackle">Reports</a></li>
+<li><a href="#controls_tackle">Controls</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#managing-users-and-credentials">Managing users and credentials</a>
+<ul class="sectlevel2">
+<li><a href="#accessing-keycloak-admin-console_tackle">Accessing the Keycloak admin console</a></li>
+<li><a href="#changing-default-password_tackle">Changing the default password</a></li>
+<li><a href="#adding-users_tackle">Adding users</a></li>
+</ul>
+</li>
+<li><a href="#managing-applications_tackle">Managing applications</a>
+<ul class="sectlevel2">
+<li><a href="#creating-application_tackle">Creating an application</a></li>
+<li><a href="#importing-applications_tackle">Importing applications</a></li>
+<li><a href="#managing-imports_tackle">Managing application imports</a></li>
+<li><a href="#updating-tags-of-application_tackle">Updating the tags assigned to an application</a></li>
+<li><a href="#updating-business-service-of-application_tackle">Updating the business service assigned to an application</a></li>
+<li><a href="#managing-application-dependencies_tackle">Managing application dependencies</a></li>
+</ul>
+</li>
+<li><a href="#managing-assessments_tackle">Managing assessments</a>
+<ul class="sectlevel2">
+<li><a href="#starting-assessment_tackle">Starting an assessment</a></li>
+<li><a href="#editing-assessment_tackle">Editing an assessment</a></li>
+<li><a href="#reviewing-assessment_tackle">Reviewing an assessment</a></li>
+<li><a href="#copying-assessments-and-reviews_tackle">Copying and applying assessments and reviews</a></li>
+<li><a href="#deleting-assessment_tackle">Deleting an assessment</a></li>
+</ul>
+</li>
+<li><a href="#managing-controls_tackle">Managing controls</a>
+<ul class="sectlevel2">
+<li><a href="#creating-stakeholder_tackle">Creating a stakeholder</a></li>
+<li><a href="#creating-stakeholder-group_tackle">Creating a stakeholder group</a></li>
+<li><a href="#creating-job-function_tackle">Creating a job function</a></li>
+<li><a href="#creating-business-service_tackle">Creating a business service</a></li>
+<li><a href="#creating-tag-type_tackle">Creating a tag type</a></li>
+<li><a href="#creating-tag_tackle">Creating a tag</a></li>
+</ul>
+</li>
+<li><a href="#about-reports_tackle">About reports</a></li>
+<li><a href="#upgrading_tackle">Upgrading the Tackle application</a>
+<ul class="sectlevel2">
+<li><a href="#upgrading-from-tackle-version_1-1-to-1-2_tackle">Upgrading from version 1.1.0 to 1.2.0</a></li>
+<li><a href="#upgrading-from-tackle-version-1-0-to-1-1_tackle">Upgrading from version 1.0.0 to 1.1.0</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="about-pathfinder_tackle">About Tackle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tackle is a cloud-native application that assesses your applications to determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring. Tackle also helps you to plan the migration of your applications to an enterprise Kubernetes platform.</p>
+</div>
+<div class="paragraph">
+<p>Tackle uses an interactive questionnaire for the assessment. The assessment process enables key stakeholders to gather information about applications, to discuss risks flagged by Tackle, and to reach a consensus in formulating recommendations for each application.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="installing-pathfinder_tackle">Installing Tackle</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="installing-operator_tackle">Installing the Tackle Operator</h3>
+<div class="paragraph">
+<p>You download and install the Tackle Operator on an Enterprise Kubernetes Platform cluster.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have <code>cluster-admin</code> privileges.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Install the Tackle Operator:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl create -f https://operatorhub.io/install/tackle-operator.yaml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Tackle Operator is installed in the <code>my-tackle-operator</code> namespace by default.</p>
+</div>
+</li>
+<li>
+<p>Verify the Tackle Operator installation by viewing its resources:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl get all -n my-tackle-operator</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="installing-tackle-application_tackle">Installing the Tackle application</h3>
+<div class="paragraph">
+<p>You install Tackle in a namespace by creating an instance of the Tackle application.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The Tackle Operator must be installed on the cluster.</p>
+</li>
+<li>
+<p>You must have <code>project-admin</code> privileges.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Create an instance of the Tackle application, specifying its namespace:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl apply -n &lt;namespace&gt; -f https://raw.githubusercontent.com/konveyor/tackle-operator/main/src/main/resources/k8s/tackle/tackle.yaml</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You can create multiple instances of the Tackle application in the same namespace by specifying a unique name for each instance in the <code>tackle.yaml</code> file.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>In the Kubernetes dashboard, click <strong>Workloads</strong> &#8594; <strong>Deployments</strong> to verify the installation.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="accessing-console_tackle">Logging in to the Tackle web console</h3>
+<div class="paragraph">
+<p>You can log in to the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have the Tackle application installed.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Kubernetes dashboard, click <strong>Services</strong> &#8594; <strong>Ingresses</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Endpoint</strong> of the <code>tackle-sample</code> ingress to launch the Tackle web console in a new browser window.</p>
+</li>
+<li>
+<p>Enter <code>tackle</code> in the <strong>Username or email</strong> field, <code>password</code> in the <strong>Password</strong> field, and click <strong>Log in</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You must change the default password of the tackle user.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="console-services_tackle">Tackle web console services</h3>
+<div class="paragraph">
+<p>Tackle web console provides the following services:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Application inventory</p>
+</li>
+<li>
+<p>Assessments</p>
+</li>
+<li>
+<p>Reviews</p>
+</li>
+<li>
+<p>Reports</p>
+</li>
+<li>
+<p>Controls</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="application-inventory_tackle">Application inventory</h4>
+<div class="paragraph">
+<p>The <strong>Application inventory</strong> page enables you to perform the following tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Manage your application portfolio.</p>
+</li>
+<li>
+<p>Define and manage application dependencies.</p>
+</li>
+<li>
+<p>Link applications to the business services that they support.</p>
+</li>
+<li>
+<p>Describe and categorize applications by using tags.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="assessments_tackle">Assessments</h4>
+<div class="paragraph">
+<p>You can assess your applications on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="paragraph">
+<p>The assessment helps you determine an appropriate migration strategy for each application, for example, rehosting, replatforming, or refactoring.</p>
+</div>
+<div class="paragraph">
+<p>The assessment is an interactive questionnaire that gathers information and identifies possible risks and their severity.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="reviews_tackle">Reviews</h4>
+<div class="paragraph">
+<p>You can review a completed assessment on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="paragraph">
+<p>The following information is collected from each reviewer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Proposed action</strong>: Proposed action for the application, for example, replatforming or rehosting.</p>
+</li>
+<li>
+<p><strong>Effort estimate</strong>: How much effort is involved in migrating the application, based on the proposed action and the identified risks.</p>
+</li>
+<li>
+<p><strong>Business criticality</strong>: How critical the application is to your business on a scale of <code>1</code> to <code>10</code>.</p>
+</li>
+<li>
+<p><strong>Work priority</strong>: Your work priority estimate for the proposed action on a scale of <code>1</code> to <code>10</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>Reports</strong> page displays the results of the reviews.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="reports_tackle">Reports</h4>
+<div class="paragraph">
+<p>The <strong>Reports</strong> page displays the results of the application assessments and reviews and can help you to plan your migration.</p>
+</div>
+<div class="paragraph">
+<p>The reports provide information about the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Suitability of applications for containerization.</p>
+</li>
+<li>
+<p>Possible risks and severity.</p>
+</li>
+<li>
+<p>Adoption plan based on estimated effort, work priority, and application dependencies.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="controls_tackle">Controls</h4>
+<div class="paragraph">
+<p>The <strong>Controls</strong> page enables you to manage the following entities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Stakeholder</strong>: A stakeholder is an individual with an interest in an application or a subject matter expert.</p>
+</li>
+<li>
+<p><strong>Stakeholder group</strong>: A stakeholder group is a group of related stakeholders. A stakeholder can belong to one or more stakeholder groups. Stakeholder groups are used to assign multiple stakeholders to review an assessment.</p>
+</li>
+<li>
+<p><strong>Job function</strong>: A job function is an attribute of a stakeholder. You use a predefined job function or create a new job function.</p>
+</li>
+<li>
+<p><strong>Business service</strong>: A business service is an attribute of an application, for example, credit card service, transportation, or IT support. You can use a predefined business service or create a new business service.</p>
+</li>
+<li>
+<p><strong>Tag</strong>: A tag is an attribute of an application. Tags are an extensible and flexible way to add metadata to applications. Tags are grouped under a parent tag type. You can use a predefined tag or create a new tag.</p>
+</li>
+<li>
+<p><strong>Tag type</strong>: A tag type defines the rank and background color of a group of related tags.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-users-and-credentials">Managing users and credentials</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can manage Tackle users and passwords by using the Keycloak admin console.</p>
+</div>
+<div class="sect2">
+<h3 id="accessing-keycloak-admin-console_tackle">Accessing the Keycloak admin console</h3>
+<div class="paragraph">
+<p>When you install Tackle, a Keycloak admin user is created. You must obtain the admin user name and password to log in to the Keycloak admin console. The credentials are stored in the <code>tackle-keycloak</code> secret.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have <code>cluster-admin</code> privileges.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Run the following command to obtain the admin credentials:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl get secret tackle-keycloak -o go-template='{{range $k,$v := .data}}{{printf "%s: " $k}}{{if not $v}}{{$v}}{{else}}{{$v | base64decode}}{{end}}{{"\n"}}{{end}}'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example output</div>
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">ADMIN_PASSWORD: &lt;password&gt;
+ADMIN_USERNAME: admin</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Launch a browser and navigate to <code>https://&lt;www.example.com&gt;/auth</code>, specifying the Tackle cluster URL.</p>
+</li>
+<li>
+<p>Log in to the Keycloak admin console with the admin user name and password.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="changing-default-password_tackle">Changing the default password</h3>
+<div class="paragraph">
+<p>You must change the default password of the tackle user.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have <code>cluster-admin</code> privileges</p>
+</li>
+<li>
+<p>You must have the Keycloak admin user name and password.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Log in to the Keycloak admin console at <code>https://&lt;www.example.com&gt;/auth</code>, specifying the Tackle cluster URL.</p>
+</li>
+<li>
+<p>Locate the tackle user in the <strong>Tackle</strong> realm. See <a href="https://www.keycloak.org/docs/latest/server_admin/index.html#searching-for-users">Searching for users</a> in the Keycloak documentation.</p>
+</li>
+<li>
+<p>Update the tackle user&#8217;s password. See <a href="https://www.keycloak.org/docs/latest/server_admin/index.html#_user-credentials">User Credentials</a>.</p>
+</li>
+<li>
+<p>Log out of the Keycloak admin console.</p>
+</li>
+<li>
+<p>Log in to the Tackle web console as the tackle user to verify the new password.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="adding-users_tackle">Adding users</h3>
+<div class="paragraph">
+<p>You can add users by using the Keycloak admin console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have <code>cluster-admin</code> privileges</p>
+</li>
+<li>
+<p>You must have the Keycloak admin user name and password.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Log in to the Keycloak admin console at <code>https://&lt;www.example.com&gt;/auth</code>, specifying the Tackle cluster URL.</p>
+</li>
+<li>
+<p>Create a new user in the <strong>Tackle</strong> realm. See <a href="https://www.keycloak.org/docs/latest/server_admin/index.html#_create-new-user">Creating a new user</a> in the Keycloak documentation.</p>
+</li>
+<li>
+<p>Create a password for the new user. See <a href="https://www.keycloak.org/docs/latest/server_admin/index.html#creating-a-password-for-the-user">Creating a password for the user</a>.</p>
+</li>
+<li>
+<p>Optional: Set attributes and permissions for the new user. See <a href="https://www.keycloak.org/docs/latest/server_admin/index.html#user-profile">User profile</a>.</p>
+</li>
+</ol>
+</div>
+<h3 id="additional-resources-keycloak_tackle" class="discrete">Additional resources for Keycloak</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.keycloak.org/docs/latest/server_admin/#admin-console">Admin console</a> in the Keycloak documentation.</p>
+</li>
+<li>
+<p><a href="https://www.keycloak.org/docs/latest/server_admin/#user-management">User management</a> in the Keycloak documentation.</p>
+</li>
+<li>
+<p><a href="https://www.keycloak.org/getting-started/getting-started-operator-kubernetes">Keycloak Operator on Kubernetes</a> in the Keycloak documentation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-applications_tackle">Managing applications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can create, import, tag, and modify your applications in the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-application_tackle">Creating an application</h3>
+<div class="paragraph">
+<p>You can create an application on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong> and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the application.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the application.</p>
+</li>
+<li>
+<p><strong>Business service</strong>: Optional. You can select a business service that describes the application.</p>
+</li>
+<li>
+<p><strong>Tags</strong>: Optional. You can select one or more tags.</p>
+</li>
+<li>
+<p><strong>Comments</strong>: Optional. Comments about the application.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new application is displayed on the <strong>Application inventory</strong> page.</p>
+</div>
+</li>
+<li>
+<p>Expand the application to view its tags and comments.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="importing-applications_tackle">Importing applications</h3>
+<div class="paragraph">
+<p>You can import one or more applications into the <strong>Application inventory</strong> page of the Tackle web console by using a CSV file.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You cannot create tags or business services by importing a CSV file. Specified tags or business services must exist in the web console before you import the applications.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The CSV file contains the following fields:</p>
+</div>
+<div class="paragraph">
+<p><code>Record Type 1</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Describes an application or application dependencies.</p>
+</li>
+<li>
+<p>Required for all records.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following values are allowed for <code>Record Type 1</code>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>1</code>: Application: This option has the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Application Name</code>: Required.</p>
+</li>
+<li>
+<p><code>Description</code>: Optional.</p>
+</li>
+<li>
+<p><code>Comments</code>: Optional.</p>
+</li>
+<li>
+<p><code>Business Service</code>: Optional. Must exist in the web console.</p>
+</li>
+<li>
+<p><code>Tag Type &lt;1..20&gt;</code>: Optional. Must exist in the web console.</p>
+</li>
+<li>
+<p><code>Tag &lt;1..20&gt;</code>: Optional. Must exist in the web console.</p>
+<div class="paragraph">
+<p>You can import up to 20 <code>Tag Type &lt;x&gt;</code> and <code>Tag &lt;x&gt;</code> fields.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>2</code>: Application dependencies: This option requires the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Application Name</code></p>
+</li>
+<li>
+<p><code>Dependency</code>: Must be the same as the <code>Application Name</code> of the dependency.</p>
+</li>
+<li>
+<p><code>Dependency Direction</code>: Allowed values are <code>northbound</code> and <code>southbound</code>.</p>
+<div class="paragraph">
+<p>All other fields are empty.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. CSV example</caption>
+<colgroup>
+<col style="width: 6.25%;">
+<col style="width: 12.5%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+<col style="width: 6.25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Record Type 1</th>
+<th class="tableblock halign-left valign-top">Application Name</th>
+<th class="tableblock halign-left valign-top">Dependency</th>
+<th class="tableblock halign-left valign-top">Dependency Direction</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Comments</th>
+<th class="tableblock halign-left valign-top">Business Service</th>
+<th class="tableblock halign-left valign-top">Tag Type 1</th>
+<th class="tableblock halign-left valign-top">Tag 1</th>
+<th class="tableblock halign-left valign-top">Tag Type 2</th>
+<th class="tableblock halign-left valign-top">Tag 2</th>
+<th class="tableblock halign-left valign-top">Tag Type 3</th>
+<th class="tableblock halign-left valign-top">Tag 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Purchasing</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vendor management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required for purchase order processing and accounts payable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Z/OS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COBOL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Purchasing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiller</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">northbound</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-PO</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requisitions, purchase orders, goods received</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Requisition to receipt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Z/OS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COBOL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Payroll</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Payroll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To be retired at the end of the financial year</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oracle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Payroll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-GL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">northbound</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-Payroll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">southbound</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-GL</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">General Ledger</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Z/OS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DB2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COBOL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Imported-HR</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Human Resources</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Go live scheduled for Q3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finance and HR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operating System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RHEL 8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Database</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PostgreSQL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Python</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Valid CSV file.</p>
+</li>
+<li>
+<p>Specified business services, tag types, and tags created in the web console.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Import</strong>.</p>
+</li>
+<li>
+<p>Browse to the CSV file and click <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Import</strong>.</p>
+<div class="paragraph">
+<p>The imported applications are displayed on the <strong>Application inventory</strong> page .</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="managing-imports_tackle">Managing application imports</h3>
+<div class="paragraph">
+<p>You can manage application imports on the <strong>Application import</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> in the toolbar and select <strong>Manage imports</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Application import</strong> page displays a list of application imports.</p>
+</div>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application import and select one of the following options:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Delete</strong> deletes the application import.</p>
+</li>
+<li>
+<p><strong>View error report</strong> displays a table of application import errors.</p>
+</li>
+<li>
+<p><strong>Export errors</strong> enables you to save the application import errors as a CSV file.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="updating-tags-of-application_tackle">Updating the tags assigned to an application</h3>
+<div class="paragraph">
+<p>You can add or remove tags assigned to an application on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Edit icon beside an application.</p>
+</li>
+<li>
+<p>Add or delete tags and click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Expand the application to view the updated tags.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="updating-business-service-of-application_tackle">Updating the business service assigned to an application</h3>
+<div class="paragraph">
+<p>You can update the business service assigned to an application on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The business service must exist on the <strong>Controls</strong> page.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Edit icon beside an application.</p>
+</li>
+<li>
+<p>Select a business service and click <strong>Save</strong>.</p>
+<div class="paragraph">
+<p>The updated business service is displayed in the <strong>Business service</strong> column of the application.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="managing-application-dependencies_tackle">Managing application dependencies</h3>
+<div class="paragraph">
+<p>You can add, delete, and view application dependencies in the <strong>Manage dependencies</strong> window on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application and select <strong>Manage dependencies</strong>.</p>
+</li>
+<li>
+<p>To add dependencies, select applications in the northbound or southbound dependencies fields.</p>
+</li>
+<li>
+<p>To remove dependencies, delete selected applications in the northbound or southbound dependencies fields.</p>
+</li>
+<li>
+<p>Click <strong>Close</strong> to save and close.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-assessments_tackle">Managing assessments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can start, edit, review, and delete application assessments in the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="sect2">
+<h3 id="starting-assessment_tackle">Starting an assessment</h3>
+<div class="paragraph">
+<p>You start an application assessment on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Select an application that does not have a <strong>Completed</strong> assessment status and click the <strong>Assess</strong> button in the toolbar.</p>
+</li>
+<li>
+<p>Select individual stakeholders or stakeholder groups and then click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select responses to questions on each page of the <strong>Application assessment</strong> wizard and then click <strong>Next</strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>All questions are mandatory.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>When you have completed all the responses, click <strong>Save</strong> to save the assessment or <strong>Save and review</strong> to start the assessment review process.</p>
+<div class="paragraph">
+<p>The <strong>Assessment</strong> status of each assessed application is <strong>Completed</strong>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="editing-assessment_tackle">Editing an assessment</h3>
+<div class="paragraph">
+<p>You can make an application assessment on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>An application must have a <strong>Completed</strong> assessment status.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Select an application with a <strong>Completed</strong> assessment status and click the <strong>Assess</strong> button in the toolbar.</p>
+</li>
+<li>
+<p>Click <strong>Continue</strong> to confirm that you want to edit the assessment.</p>
+</li>
+<li>
+<p>After you have updated your responses, click <strong>Save</strong> to save the assessment or <strong>Save and review</strong> to start the assessment review process.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="reviewing-assessment_tackle">Reviewing an assessment</h3>
+<div class="paragraph">
+<p>You review an application assessment on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>An application must have a <strong>Completed</strong> assessment status and a <strong>Not started</strong> review status.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Select an application with a <strong>Completed</strong> assessment status and a <strong>Not started</strong> review status and click the <strong>Review</strong> button in the toolbar.</p>
+</li>
+<li>
+<p>Review the assessment in the <strong>Assessment summary</strong> section on the <strong>Review</strong> page.</p>
+<div class="paragraph">
+<p>The <strong>Assessment summary</strong> table contains a <strong>Risk</strong> column that indicates the severity of the risk associated with each response.</p>
+</div>
+</li>
+<li>
+<p>Select a <strong>Proposed action</strong> and an <strong>Effort estimate</strong>.</p>
+</li>
+<li>
+<p>Set values for <strong>Business criticality</strong> and <strong>Work priority</strong>.</p>
+</li>
+<li>
+<p>Optional: Enter comments in the <strong>Comments</strong> field.</p>
+</li>
+<li>
+<p>Click <strong>Submit review</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Review</strong> status of each application is <strong>Completed</strong>.</p>
+</div>
+</li>
+<li>
+<p>Expand the application to view the review results.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="copying-assessments-and-reviews_tackle">Copying and applying assessments and reviews</h3>
+<div class="paragraph">
+<p>You copy an assessment or assessment and review from a single application and apply them to multiple applications on the <strong>Application inventory</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>You can apply assessments and reviews to groups of related applications, for example, applications written in Java or belonging to the same business service.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>An application must have a <strong>Completed</strong> assessment status or <strong>Completed</strong> assessment and review statuses, depending on whether you are copying an assessment or an assessment and review.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application with a <strong>Completed</strong> assessment status or <strong>Completed</strong> assessment and review statuses.</p>
+</li>
+<li>
+<p>Select <strong>Copy assessment</strong> or <strong>Copy assessment and review</strong>.</p>
+</li>
+<li>
+<p>Optional: In the dialog box, click <strong>Name</strong> to select a filter, for example, <strong>Tag</strong>, and select a tag, for example, <strong>Java</strong>, to display a filtered list of applications.</p>
+</li>
+<li>
+<p>Select the applications to which you want to apply the copied assessment or assessment and review.</p>
+</li>
+<li>
+<p>If a selected application has an existing assessment or review, select the <strong>Yes, continue</strong> check box to confirm that existing assessments and reviews will be overwritten.</p>
+</li>
+<li>
+<p>Click <strong>Copy</strong>.</p>
+<div class="paragraph">
+<p>The selected applications display a <strong>Completed</strong> assessment status or <strong>Completed</strong> assessment and review statuses.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deleting-assessment_tackle">Deleting an assessment</h3>
+<div class="paragraph">
+<p>You delete an application assessment on the <strong>Application inventory</strong> page of the Tackle web console. Deleting an assessment deletes its review.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>An application must have a <strong>Completed</strong> assessment status.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Application inventory</strong>.</p>
+</li>
+<li>
+<p>Click the Options menu <span class="image"><img src="../modules/images/kebab.png" alt="kebab" height="20" title="Options menu"></span> beside an application with a <strong>Completed</strong> assessment status and select <strong>Discard assessment</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Continue</strong> to confirm the deletion.</p>
+<div class="paragraph">
+<p>The <strong>Assessment</strong> and <strong>Review</strong> status of the application are <strong>Not started</strong>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-controls_tackle">Managing controls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Controls</strong> page of the Tackle web console enables you to manage stakeholders, stakeholder groups, job functions, business services, and tags.</p>
+</div>
+<div class="sect2">
+<h3 id="creating-stakeholder_tackle">Creating a stakeholder</h3>
+<div class="paragraph">
+<p>You can create a stakeholder on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>The stakeholder must have a valid email address.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Stakeholders</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Email</strong>: Email address of the stakeholder.</p>
+</li>
+<li>
+<p><strong>Display name</strong>: Name of the stakeholder.</p>
+</li>
+<li>
+<p><strong>Job function</strong>: Optional. You can select a predefined job function or type a job function to create it.</p>
+</li>
+<li>
+<p><strong>Groups</strong>: Optional. You can select one or more stakeholder groups from a list of stakeholder groups that you have created.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new stakeholder is displayed on the <strong>Stakeholders</strong> tab.</p>
+</div>
+</li>
+<li>
+<p>Expand the stakeholder to view the stakeholder groups to which the stakeholder belongs.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-stakeholder-group_tackle">Creating a stakeholder group</h3>
+<div class="paragraph">
+<p>You can create stakeholder groups on the <strong>Controls</strong> page of the Tackle web console. Stakeholder groups enable you to assign multiple stakeholders to review an assessment.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Stakeholder groups</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the stakeholder group.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional. Description of the stakeholder group.</p>
+</li>
+<li>
+<p><strong>Member(s)</strong>: Optional. You can select one or more stakeholders to add to the group.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new stakeholder group is displayed on the <strong>Stakeholder groups</strong> tab.</p>
+</div>
+</li>
+<li>
+<p>Expand the stakeholder group to view the group members.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-job-function_tackle">Creating a job function</h3>
+<div class="paragraph">
+<p>A job function is an attribute of a stakeholder. You can use a predefined job function or create a new job function on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Job functions</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Enter the <strong>Name</strong> of the job function and click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new job function is displayed on the <strong>Job functions</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-business-service_tackle">Creating a business service</h3>
+<div class="paragraph">
+<p>A business service is an attribute of an application. You can create a business service on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Business services</strong> tab and then click <strong>Create new</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the business service.</p>
+</li>
+<li>
+<p><strong>Description</strong>: Optional: Description of the business service.</p>
+</li>
+<li>
+<p><strong>Owner</strong>: Optional: Select a stakeholder.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new business service is displayed on the <strong>Business services</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-tag-type_tackle">Creating a tag type</h3>
+<div class="paragraph">
+<p>You can create a tag type on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>A tag type is the parent of a group of related tags. The tag type defines the rank and background color of the tags on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Tags</strong> tab and then click <strong>Create tag type</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the tag type.</p>
+</li>
+<li>
+<p><strong>Rank</strong>: The rank determines the order in which the tags are displayed.</p>
+</li>
+<li>
+<p><strong>Color</strong>: The color is displayed as the background color for all tags associated with this tag type.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new tag type is displayed on the <strong>Tags</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="creating-tag_tackle">Creating a tag</h3>
+<div class="paragraph">
+<p>You can create a tag on the <strong>Controls</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>Tags are an extensible and flexible way to add metadata to applications. Tags are added to applications on the <strong>Application inventory</strong> page.</p>
+</div>
+<div class="paragraph">
+<p>Tags belong to a parent tag type that determines the display order and color of the tags. You can use a predefined tag type or create a new tag type.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>In the Tackle web console, click <strong>Controls</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Tags</strong> tab and then click <strong>Create tag</strong>.</p>
+</li>
+<li>
+<p>Complete the following fields:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong>: Name of the tag.</p>
+</li>
+<li>
+<p><strong>Tag type</strong>: Select a tag type.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+<div class="paragraph">
+<p>The new tag is displayed under its tag type on the <strong>Tags</strong> tab.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="about-reports_tackle">About reports</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can view a report of the assessments and reviews on the <strong>Reports</strong> page of the Tackle web console.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Reports</strong> page contains the following sections:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Current landscape</dt>
+<dd>
+<p>This section displays all applications according to their risk levels.</p>
+</dd>
+<dt class="hdlist1">Adoption candidate distribution</dt>
+<dd>
+<p>This section lists the assessed applications with the following columns:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Criticality</strong> is based on the <strong>Business criticality</strong> value of the review.</p>
+</li>
+<li>
+<p><strong>Priority</strong> is based on the <strong>Work priority</strong> value of the review.</p>
+</li>
+<li>
+<p><strong>Effort</strong> is based on the <strong>Effort estimate</strong> value of the review.</p>
+</li>
+<li>
+<p><strong>Decision</strong> is based on the <strong>Proposed action</strong> value of the review.</p>
+<div class="paragraph">
+<p>By default, all applications are selected. You can clear some of the application check boxes to filter the report.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Suggested adoption plan</dt>
+<dd>
+<p>This section displays a suggested adoption plan based on effort, priority, and dependencies.</p>
+</dd>
+<dt class="hdlist1">Identified risks</dt>
+<dd>
+<p>This section lists the severe risks identified in the assessments for all applications.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrading_tackle">Upgrading the Tackle application</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You manually upgrade instances of the Tackle application.</p>
+</div>
+<div class="sect2">
+<h3 id="upgrading-from-tackle-version_1-1-to-1-2_tackle">Upgrading from version 1.1.0 to 1.2.0</h3>
+<div class="paragraph">
+<p>You manually upgrade an instance of the Tackle application from 1.1.0 to 1.2.0.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have project administrator privileges.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>For each step, specify the namespace and the Tackle instance name.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Update the <code>keycloak</code> deployment of the Tackle instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-keycloak keycloak-theme=quay.io/konveyor/tackle-keycloak-init:1.2.0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>application-inventory-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-application-inventory-rest \
+  &lt;tackle_instance&gt;-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.2.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>controls-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-controls-rest \
+  &lt;tackle_instance&gt;-controls-rest=quay.io/konveyor/tackle-controls:1.2.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>pathfinder-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-pathfinder-rest \
+  &lt;tackle_instance&gt;-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.2.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>ui</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-ui \
+  &lt;tackle_instance&gt;-ui=quay.io/konveyor/tackle-ui:1.2.0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Log in to the web console and click the Help icon beside the user name to verify the upgrade.</p>
+<div class="paragraph">
+<p>The <strong>About Tackle</strong> window opens and displays the version number.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="upgrading-from-tackle-version-1-0-to-1-1_tackle">Upgrading from version 1.0.0 to 1.1.0</h3>
+<div class="paragraph">
+<p>You manually upgrade an instance of the Tackle application from 1.0.0 to 1.1.0.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have project administrator privileges.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>For each step, specify the namespace and the Tackle instance name.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Update the <code>keycloak</code> deployment of the Tackle instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl -n &lt;namespace&gt; exec deployments/&lt;tackle_instance&gt;-keycloak \
+  -c &lt;tackle_instance&gt;-keycloak -- bash -c '/opt/jboss/keycloak/bin/kcadm.sh \
+  update realms/tackle -s internationalizationEnabled=true -s supportedLocales+=en \
+  -s supportedLocales+=es -s defaultLocale=en --server http://localhost:8080/auth \
+  --realm master --user $KEYCLOAK_USER --password $KEYCLOAK_PASSWORD'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>application-inventory-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-application-inventory-rest \
+  &lt;tackle_instance&gt;-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.1.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>controls-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-controls-rest \
+  &lt;tackle_instance&gt;-controls-rest=quay.io/konveyor/tackle-controls:1.1.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>pathfinder-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-pathfinder-rest \
+  &lt;tackle_instance&gt;-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.1.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>ui</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-ui \
+  &lt;tackle_instance&gt;-ui=quay.io/konveyor/tackle-ui:1.1.0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Log in to the web console and click the Help icon beside the user name to verify the upgrade.</p>
+<div class="paragraph">
+<p>The <strong>About Tackle</strong> window opens and displays the version number.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>

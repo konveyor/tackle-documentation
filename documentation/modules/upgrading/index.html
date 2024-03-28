@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Tackle Documentation | Tackle documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Tackle Documentation" />
+<meta name="author" content="Tackle documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tackle documentation" />
+<meta property="og:description" content="Tackle documentation" />
+<meta property="og:site_name" content="Tackle Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Tackle Documentation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tackle documentation team"},"description":"Tackle documentation","headline":"Tackle Documentation","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/konveyor-logo-tackle.svg"},"name":"Tackle documentation team"},"url":"/documentation/modules/upgrading/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/"><img src="/assets/img/konveyor-logo-tackle.svg" alt="Tackle Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/tackle-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="upgrading_tackle">Upgrading the Tackle application</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You manually upgrade instances of the Tackle application.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrading-from-tackle-version_1-1-to-1-2_tackle">Upgrading from version 1.1.0 to 1.2.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You manually upgrade an instance of the Tackle application from 1.1.0 to 1.2.0.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have project administrator privileges.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>For each step, specify the namespace and the Tackle instance name.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Update the <code>keycloak</code> deployment of the Tackle instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-keycloak keycloak-theme=quay.io/konveyor/tackle-keycloak-init:1.2.0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>application-inventory-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-application-inventory-rest \
+  &lt;tackle_instance&gt;-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.2.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>controls-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-controls-rest \
+  &lt;tackle_instance&gt;-controls-rest=quay.io/konveyor/tackle-controls:1.2.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>pathfinder-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-pathfinder-rest \
+  &lt;tackle_instance&gt;-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.2.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>ui</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-ui \
+  &lt;tackle_instance&gt;-ui=quay.io/konveyor/tackle-ui:1.2.0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Log in to the web console and click the Help icon beside the user name to verify the upgrade.</p>
+<div class="paragraph">
+<p>The <strong>About Tackle</strong> window opens and displays the version number.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="upgrading-from-tackle-version-1-0-to-1-1_tackle">Upgrading from version 1.0.0 to 1.1.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You manually upgrade an instance of the Tackle application from 1.0.0 to 1.1.0.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>You must have project administrator privileges.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">Procedure</div>
+<p>For each step, specify the namespace and the Tackle instance name.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Update the <code>keycloak</code> deployment of the Tackle instance:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl -n &lt;namespace&gt; exec deployments/&lt;tackle_instance&gt;-keycloak \
+  -c &lt;tackle_instance&gt;-keycloak -- bash -c '/opt/jboss/keycloak/bin/kcadm.sh \
+  update realms/tackle -s internationalizationEnabled=true -s supportedLocales+=en \
+  -s supportedLocales+=es -s defaultLocale=en --server http://localhost:8080/auth \
+  --realm master --user $KEYCLOAK_USER --password $KEYCLOAK_PASSWORD'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>application-inventory-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-application-inventory-rest \
+  &lt;tackle_instance&gt;-application-inventory-rest=quay.io/konveyor/tackle-application-inventory:1.1.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>controls-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-controls-rest \
+  &lt;tackle_instance&gt;-controls-rest=quay.io/konveyor/tackle-controls:1.1.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>pathfinder-rest</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-pathfinder-rest \
+  &lt;tackle_instance&gt;-pathfinder-rest=quay.io/konveyor/tackle-pathfinder:1.1.0-native</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Update the <code>ui</code> deployment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-terminal" data-lang="terminal">$ kubectl set image -n &lt;namespace&gt; deployment/&lt;tackle_instance&gt;-ui \
+  &lt;tackle_instance&gt;-ui=quay.io/konveyor/tackle-ui:1.1.0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Log in to the web console and click the Help icon beside the user name to verify the upgrade.</p>
+<div class="paragraph">
+<p>The <strong>About Tackle</strong> window opens and displays the version number.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/tackle-documentation">tackle-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>
